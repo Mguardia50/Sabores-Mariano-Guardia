@@ -1,0 +1,716 @@
+/* INDICE
+linea - Contenido
+23      Codigos generales
+38      Header, footer y navegación
+109     MOBILE Header, footer y navegación
+157     Mains y secciones
+204     MOBILE Mains y secciones
+246     Parrafos y titulos
+335     Imágenes, botones y logos
+377     Listas pag SABORES E INGREDIENTES
+410     MOBILE Listas pag SABORES E INGREDIENTES
+444     PAGINA ADITIVOS
+502     MOBILE PAGINA ADITIVOS
+572     CONTACTO
+647     MOBILE CONTACTO
+681     ANIMACIONES
+
+
+
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body_index{
+    background-image: linear-gradient(to bottom, white, white ,rgb(134, 9, 32),white, white );
+}
+
+html{
+    position: relative;
+    min-height: calc(100vh - 70px);
+}
+
+/*--------------------Header, footer y navegación-------------------*/
+/*--------------------Header, footer y navegación-------------------*/
+/*--------------------Header, footer y navegación-------------------*/
+
+.encabezado{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+.logoSabores{
+    margin: 10px;
+    display: flex;
+    width: 30%;
+}
+
+.navegador{
+    
+    font-size: large;
+    width: 70%;
+    height: auto;
+}
+
+.listaNav{
+    
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+    
+}
+
+.vinculos:link{
+    text-decoration: none;
+}
+
+.vinculos :hover{
+    font-weight: bolder;
+    color: black;
+}
+
+
+li{ 
+    list-style: none;
+    color: rgb(134, 9, 32);
+}
+
+footer{
+    width: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    background-color: rgb(134, 9, 32);
+    position: absolute;
+    bottom: -70px;
+}
+
+.footerParrafo{
+    color: white;
+}
+
+#menuHamburguesa{
+    display: none;
+}
+.labelHamburguesa{
+    display: none;
+} 
+
+
+/* MOBILE--------------------Header, footer y navegación-------------------*/
+/* MOBILE--------------------Header, footer y navegación-------------------*/
+/* MOBILE--------------------Header, footer y navegación-------------------*/
+@media only screen and (max-width:999px){ 
+    #menuHamburguesa{
+        display: none;
+    }
+    .labelHamburguesa{
+        padding: 5px;
+        display: flex;
+        font-size: larger;
+        font-weight: bold;
+    } 
+    .listaNav{
+    
+        display: none;
+        
+    }
+    
+    input:checked  ~ .listaNav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .encabezado{
+          display: flex;
+          align-items:center;
+          justify-content: space-between;
+      }
+
+    .navegador{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 40%;
+          padding: 5px;
+          background-image: linear-gradient(to left, pink, white, pink);
+          border: 2px solid rgb(134, 9, 32);   
+        
+      }
+
+    footer{
+        bottom: -140px;
+    }
+
+}
+
+/*------------------Mains y secciones-----------------------------*/
+/*------------------Mains y secciones-----------------------------*/
+/*------------------Mains y secciones-----------------------------*/
+
+.main_indexMOBILE{
+    display: none;
+}
+.main_index{
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 1ft 1ft;
+    grid-template-rows: 100px 400px 400px;
+    grid-template-areas: "titulo titulo"
+                        "texto1 imagen1" /*aca pasa algo, ¿deberia darle ID a las 2 imagenes para posicionar cada una en su respectiva grid? se colocan correctamente SOLO dado a casualidad y eso no me gusta*/
+                        "imagen2 texto2";
+    row-gap: 5px;
+    column-gap: 5px;
+    align-items: center;
+}
+
+
+
+.section_index{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.boxSection_index{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    align-items: center;   
+    border: 2px solid black;
+    margin: 10px;
+    box-shadow: 10px 10px black;
+    background-color: white;
+}
+
+.boxSection_index:hover{
+   animation-name: achicar;
+   animation-duration: 2s; 
+   background-color: rgb(255, 103, 134);
+   box-shadow: none;
+}
+
+/* MOBILE------------------Mains y secciones-----------------------------*/
+/* MOBILE------------------Mains y secciones-----------------------------*/
+/* MOBILE------------------Mains y secciones-----------------------------*/
+
+@media only screen and (max-width:799px){
+
+    .imgMain_index{
+      display: none;
+    }
+    .main_index{
+        display: none;
+    }
+
+    .main_indexMOBILE{
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border:2px solid rgb(134, 9, 32);
+    }
+
+
+    .p_indexMOBILE{
+        color: white;
+        background-color: rgb(134, 9, 32);
+    }
+    .section_index{
+        display: none;
+    }
+
+    .boxSection_index{
+        height: 250px;
+        width: 250px;
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+}
+
+
+/*---------------------Parrafos y titulos-----------------------*/
+/*---------------------Parrafos y titulos-----------------------*/
+/*---------------------Parrafos y titulos-----------------------*/
+
+#grillatitulo_main{
+    grid-area: titulo;
+}
+
+h1{
+    font-family: 'Bellota', cursive;
+    color: rgb(134, 9, 32);
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
+}
+
+#grilla1_main{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: solid rgb(134, 9, 32) 2px;
+    grid-area: texto1;
+}
+
+.parrafo_index{
+    
+    padding: 3%;
+}
+
+p{
+    font-family: 'Bellota';
+    font-size: large;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    
+}
+
+#grilla4_main{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color:  rgb(134, 9, 32) ;
+    grid-area: texto2;
+    
+}
+
+.redParrafo{
+    
+    color: white;
+    padding: 3%;
+}
+
+.h2_index{
+    font-family: 'Bellota';
+    text-align: center;
+    color: black;
+}
+
+h2{
+    color:rgb(134, 9, 32) ;
+    font-weight: bold;
+    font-family: 'Bellota';
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.h2_sya{
+    background-color:rgb(134, 9, 32) ;
+    color: white;
+    border: 1px solid black;
+}
+
+h3{
+    color: blue;
+    text-decoration: underline;
+    text-align: center;
+}
+
+h4{
+    margin-left: 5px;
+}
+
+
+
+/*---------------------Imágenes, botones y logos-----------------------*/
+/*---------------------Imágenes, botones y logos-----------------------*/
+/*---------------------Imágenes, botones y logos-----------------------*/
+
+.imgMain_index{
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+    background-color:  rgb(134, 9, 32) ;
+}
+
+.imgSection_index{
+    width: 80%;
+    height: 70%;
+   
+}
+
+.btn_muestra{
+    background-color:  rgb(134, 9, 32);
+    color: white;
+    padding: 5px;
+}
+
+.circulo { /*esto lo hice para probar, es más fácil con imágen*/
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    border: 2px solid black;
+  }
+
+  .cuadrado {
+    width: auto; 
+    height: auto; 
+    padding: 5px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+
+
+/*-----------------------Listas pag SABORES E INGREDIENTES------------------------------*/
+/*-----------------------Listas pag SABORES E INGREDIENTES------------------------------*/
+/*-----------------------Listas pag SABORES E INGREDIENTES------------------------------*/
+
+.lista{
+    display: grid;
+    row-gap: 30px;
+    justify-items: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, white , rgb(216, 138, 151), white );
+    padding-bottom: 10px;
+}
+
+.muestra{
+    border: 2px solid rgb(134, 9, 32) ;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    align-items: center;
+    }
+
+.lista_muestra{
+    display: flex;
+    color:rgb(134, 9, 32) ;
+    font-weight: bold;
+    font-family: 'Bellota';
+    margin-left: 10px;
+}
+
+/*MOBILE-----------Listas pag SABORES E INGREDIENTES--------*/
+/*MOBILE-----------Listas pag SABORES E INGREDIENTES--------*/
+/*MOBILE-----------Listas pag SABORES E INGREDIENTES--------*/
+
+@media only screen and (min-width:850px){
+    .lista{
+
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    }
+}
+
+@media only screen and (max-width:850px){
+    .lista{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
+
+
+
+@media only screen and (max-width:720px){
+    .lista{
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+}   
+
+@media only screen and (max-width:500px){
+    .lista{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/*-----------------------PAGINA ADITIVOS------------------------------*/
+/*-----------------------PAGINA ADITIVOS------------------------------*/
+/*-----------------------PAGINA ADITIVOS------------------------------*/
+
+
+
+
+.div_aditivos{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.parrafo_aditivos{
+    padding: 0px;
+    text-align: left;
+}
+
+.toxicidad{
+    display:flex;
+    width: 70%;
+    justify-content: space-evenly;
+}
+
+.vinculos_aditivos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box_aditivos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+
+.checkbox_aditivos{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-left: 40px;
+}
+
+.labelAditivos{
+    display: none;
+}
+
+#menuAditivos{
+    display: none;
+}
+
+.click_aditivos{
+    display: none;
+}
+
+
+
+/*MOBILE-------------PAGINA ADITIVOS-----------*/
+/*MOBILE-------------PAGINA ADITIVOS-----------*/
+/*MOBILE-------------PAGINA ADITIVOS-----------*/
+
+@media only screen and (max-width:915px){
+
+    .div_aditivos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .toxicidad{
+        display:flex;
+        width: 100%;
+        margin-top: 10px;
+        justify-content: space-evenly;
+    }
+
+    .circulo { /*esto lo hice para probar, es más fácil con imágen*/
+        width: 30px;
+        height: 30px;
+      }
+
+
+    .vinculos_aditivos{
+        display: none;
+    }
+
+    .labelAditivos{
+        display: flex;
+        background-color: rgb(134, 9, 32);
+        color: white;
+        font-size: larger;
+        justify-content: center;
+    }
+
+    .parrafo_aditivos{
+        text-align: center;
+    }
+
+    input:checked  ~ .vinculos_aditivos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width:620px){
+    .boxParrafo_aditivos{
+        display: none;
+    }
+    .click_aditivos{
+        display: flex;
+        width: 60px;
+        background-color: rgb(235, 231, 231);
+        color: rgb(134, 9, 32);
+        font-size: 15px;
+        text-align: center;
+    }
+    .click_aditivos:focus ~ .boxParrafo_aditivos{
+        display: flex;
+        bottom: 20%;
+        right: 50px;
+        position: fixed;
+        border: 1px solid black;
+        background-color: white;
+    }
+    
+}
+/*------------CONTACTO------------------*/
+/*------------CONTACTO------------------*/
+/*------------CONTACTO------------------*/
+
+
+.section_contacto{
+    display: flex;
+}
+
+.field_contacto{
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    padding: 5%;
+    justify-content: space-between;
+}
+
+#coment{
+    
+    overflow: visible;
+    grid-area: comen;
+}
+.form_contacto{
+    width: 50%;
+}
+
+
+.aside_contacto{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 1000px;
+    background-color:  rgb(134, 9, 32);
+    align-items: center;
+}
+
+.div_consulta{
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+}
+
+input[type="submit"]{  
+
+    overflow: visible;
+    position: sticky;
+    padding: 2%;
+    margin-top: 10px;
+    grid-area: boton;
+
+
+}
+
+.div_comment{
+    overflow: visible;
+    display: grid;
+    grid-template-columns: 70% 70% 70%;
+    grid-template-rows: 200px 50px;
+    grid-template-areas: "comen comen comen"
+                        "nada nada boton";
+   
+}
+#info_contacto{
+    font-family: 'Bellota';
+    font-size: 40px;
+    padding: 5%;
+    line-height: 70px;
+}
+
+#muestrasSolicitadas{
+    width: 60%;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+/*MOBILE--------------CONTACTO---------------*/
+/*MOBILE--------------CONTACTO---------------*/
+/*MOBILE--------------CONTACTO---------------*/
+
+
+@media only screen and (max-width:760px){
+
+    
+    .div_comment{
+        display: flex;
+        flex-direction: column;
+    }
+    h5{
+        font-size: large;
+    }
+    .terminosYcondiciones{
+        display: flex;
+    }
+    
+}
+
+@media only screen and (max-width:560px){
+    .section_contacto{
+        display: flex;
+        flex-direction: column;
+    }
+    .aside_contacto{
+        width: 100%;
+        height: 500px;
+    }
+    .form_contacto{
+        width: 100%;
+    }
+}
+/*--------------------ANIMACIONES-------------------------------*/
+/*--------------------ANIMACIONES-------------------------------*/
+/*--------------------ANIMACIONES-------------------------------*/
+
+@keyframes achicar{
+    0%{
+        transform: scale(1,1);
+    }
+
+    50%{
+        transform: scale(0.8,0.8);
+    }
+
+    100%{
+            transform: scale(1,1);
+    }
+}
+
+@keyframes rotar{ /*le iba a usar y al final no, pero dejo la animacion programada por siaca*/
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: scale(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+            transform: scale(360deg);
+    }
+}

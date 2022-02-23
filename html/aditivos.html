@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../img/flavicon sabores.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Sabores Mariano Guardia</title>
+</head>
+<body>
+
+    <header class="encabezado">
+        <img src="../img/logo sabores.jpg" alt="" class="logoSabores">
+    
+        
+        <nav class="navegador">
+            <input type="checkbox" id="menuHamburguesa">
+            <label class="labelHamburguesa" for="menuHamburguesa"> ☰ </label>
+
+            <ul class="listaNav">
+                <a href="../index.html" class="vinculos">
+                    <li>INICIO</li>
+                </a>
+                <a href="sabores.html" class="vinculos">
+                    <li>SABORES</li>
+                </a>
+                <a href="ingredientes.html" class="vinculos">
+                    <li>INGREDIENTES</li>
+                </a>
+                <a href="aditivos.html" class="vinculos">
+                    <li>ADITIVOS</li>
+                </a>
+                <a href="contacto.html" class="vinculos">
+                    <li>CONTACTO</li>
+                </a>
+            </ul>
+        </nav>
+
+
+    </header>
+
+
+    <main style="border-bottom: 2px solid black;"> <!-- Se que esto no gusta y no se usa, pero es a fin didactico -->
+        
+        <h1 class="titulo1">ADITIVOS</h1>
+
+        <section class="div_aditivos">
+            <div>
+                <input type="text" placeholder="BUSCAR ADITIVO">
+                <button>BUSCAR</button>
+            </div>
+            <div class="toxicidad"> <!-- LOS CIRCULOS LO HICE PARA PROBAR -->
+                <div class="circulo" style="background-color: red;"></div>
+                <p class="parrafo_aditivos">MUY PERJUDICIAL</p>
+                <div class="circulo" style="background-color: rgb(206, 206, 0);"></div>
+                <p class="parrafo_aditivos">PERJUDICIAL</p>
+                <div class="circulo" style="background-color: green;" ></div>
+                <p class="parrafo_aditivos">INOCUO</p>
+            </div>
+        </section>
+
+        <section>
+            <input type="checkbox" id="menuAditivos">
+            <label class="labelAditivos" for="menuAditivos">Ver tipo ☰ </label>
+            <div class="vinculos_aditivos">
+                <div>
+                    <h3>AC</h3>
+                    <p class="parrafo_aditivos">Acidulantes</p>
+                </div>
+                <div>
+                    <h3>AO</h3>
+                    <p class="parrafo_aditivos">Antioxidantes</p>
+                </div>
+                <div>
+                    <h3>CL</h3>
+                    <p class="parrafo_aditivos">Colorantes</p>
+                </div>
+                <div>
+                    <h3>CN</h3>
+                    <p class="parrafo_aditivos">Conservantes</p>
+                </div>
+                <div>
+                    <h3>ED</h3>
+                    <p class="parrafo_aditivos">Edulcorantes</p>
+                </div>
+                <div>
+                    <h3>ES</h3>
+                    <p class="parrafo_aditivos">Estabilizantes</p>
+                </div>
+                <div>
+                    <h3>PS</h3>
+                    <p class="parrafo_aditivos">Potenciadores</p>
+                </div>
+                <div>
+                    <h3>SA</h3>
+                    <p class="parrafo_aditivos">Saborizantes</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="section_aditivos"> <!-- Con esto necesito trabajar con bases de datos -->
+
+        <box class="box_aditivos">
+            <h4>CL</h4>
+            <div class="cuadrado" style="background-color: green;">
+                <p class="redParrafo">INS 100 Curcumina</p>     
+            </div>
+            <input type="button" class="click_aditivos" value="INFO">
+            <p class="boxParrafo_aditivos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, vitae? Facilis perferendis aut quas. Accusantium consequuntur ut quisquam perferendis aperiam inventore consequatur nemo odio, quo officia enim non ipsam eos.</p>
+            <div class="checkbox_aditivos">
+                <div class="div_aditivos">
+                    <p>Apto Vegano</p>
+                    <input type="checkbox" name="" id="" checked disabled>
+                </div>
+                <div class="div_aditivos">
+                    <p>Natural</p>
+                    <input type="checkbox" name="" id="" checked disabled>
+                </div>
+                <div class="div_aditivos">
+                    <p>Indeterminado</p>
+                    <input type="checkbox" name="" id="" disabled>
+                </div>
+            </div>
+        </box>
+        <box class="box_aditivos">
+            <h4>CL</h4>
+            <div class="cuadrado" style="background-color: red;">
+                <p class="redParrafo">INS 102 Tartrazina</p>
+            </div>
+            <input type="button" class="click_aditivos" value="INFO">
+            <p class="boxParrafo_aditivos">Hola mundo Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, vitae? Facilis perferendis aut quas. Accusantium consequuntur ut quisquam perferendis aperiam inventore consequatur nemo odio, quo officia enim non ipsam eos.</p>
+            <div class="checkbox_aditivos">
+                <div class="div_aditivos">
+                    <p>Apto Vegano</p>
+                    <input type="checkbox" name="" id="" checked disabled>
+                </div>
+                <div class="div_aditivos">
+                    <p>Natural</p>
+                    <input type="checkbox" name="" id="" disabled>
+                </div>
+                <div class="div_aditivos">
+                    <p>Indeterminado</p>
+                    <input type="checkbox" name="" id="" disabled>
+                </div>
+            </div>
+        </box>
+        <box class="box_aditivos">
+            <h4>CN</h4>
+            <div class="cuadrado" style="background-color: rgb(206, 206, 0);">
+                <p class="redParrafo">INS 203 Sorbato de Calcio</p>
+            </div>
+            <input type="button" class="click_aditivos" value="INFO">
+            <p class="boxParrafo_aditivos"> Para ver solo si difieren. Accusantium consequuntur ut quisquam perferendis aperiam inventore consequatur nemo odio, quo officia enim non ipsam eos.</p>
+            <div class="checkbox_aditivos">
+                <div class="div_aditivos">
+                    <p>Apto Vegano</p>
+                    <input type="checkbox" name="" id="" disabled>
+                </div>
+                <div class="div_aditivos">
+                    <p>Natural</p>
+                    <input type="checkbox" name="" id="" disabled>
+                </div>
+                <div class="div_aditivos">
+                    <p>Indeterminado</p>
+                    <input type="checkbox" name="" id="" checked disabled>
+                </div>
+            </div>
+        </box>
+        <box class="box_aditivos">
+            <h4>ED</h4>
+            <div class="cuadrado" style="background-color: red;">
+                <p class="redParrafo">INS 951 Aspartamo</p>
+            </div>
+            <input type="button" class="click_aditivos" value="INFO">
+            <p class="boxParrafo_aditivos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, vitae? Facilis perferendis aut quas. Accusantium consequuntur ut quisquam perferendis aperiam inventore consequatur nemo odio, quo officia enim non ipsam eos.</p>
+            <div class="checkbox_aditivos">
+                <div class="div_aditivos">
+                    <p>Apto Vegano</p>
+                    <input type="checkbox" name="" id="" checked disabled>
+                </div>
+                <div class="div_aditivos">
+                    <p>Natural</p>
+                    <input type="checkbox" name="" id="" disabled>
+                </div>
+                <div class="div_aditivos">
+                    <p>Indeterminado</p>
+                    <input type="checkbox" value="true" name="" id="" disabled>
+                </div>
+            </div>
+        </box>
+        
+    </section>
+
+    <footer>
+        <p class="footerParrafo">Copyright ©  Mariano Guardia Soft. Contacto: +54 9 261 5444-338 mail: mguardia50@hotmail.com Mendoza, Argentina</p>
+    </footer> 
+
+
+</body>
+</html>
