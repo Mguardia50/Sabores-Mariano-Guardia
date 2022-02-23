@@ -342,17 +342,17 @@ h4{
     padding: 3px;
     background-color:  rgb(134, 9, 32) ;
 }
-
 .imgSection_index{
     width: 80%;
     height: 70%;
-   
 }
-
 .btn_muestra{
     background-color:  rgb(134, 9, 32);
     color: white;
     padding: 5px;
+}
+.btn_muestra:hover{
+    transform: scale(1.1,1.1);
 }
 
 .circulo { /*esto lo hice para probar, es más fácil con imágen*/
@@ -386,7 +386,6 @@ h4{
     background-image: linear-gradient(to bottom, white , rgb(216, 138, 151), white );
     padding-bottom: 10px;
 }
-
 .muestra{
     border: 2px solid rgb(134, 9, 32) ;
     background-color: white;
@@ -398,7 +397,9 @@ h4{
     margin-top: 10px;
     align-items: center;
     }
-
+.muestra:hover{
+    border: 4px solid black;
+}
 .lista_muestra{
     display: flex;
     color:rgb(134, 9, 32) ;
@@ -406,7 +407,6 @@ h4{
     font-family: 'Bellota';
     margin-left: 10px;
 }
-
 /*MOBILE-----------Listas pag SABORES E INGREDIENTES--------*/
 /*MOBILE-----------Listas pag SABORES E INGREDIENTES--------*/
 /*MOBILE-----------Listas pag SABORES E INGREDIENTES--------*/
