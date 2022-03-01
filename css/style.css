@@ -14,7 +14,7 @@ linea - Contenido
 572     CONTACTO
 647     MOBILE CONTACTO
 681     ANIMACIONES
-
+722     BOOSTRAP ITEMS
 
 
 
@@ -714,3 +714,40 @@ input[type="submit"]{
             transform: scale(360deg);
     }
 }
+
+
+
+
+
+/*----------------boostrap items-----------------*/
+/*----------------boostrap items-----------------*/
+/*----------------boostrap items-----------------*/
+
+    .carousel{
+        background-image: linear-gradient(to bottom, white, pink, white);
+        height: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carousel-control-prev-icon {
+        background-color: crimson;
+        
+    }
+        
+    .carousel-control-next-icon {
+    background-color: crimson;
+      }
+
+    .carousel-indicators{
+        background-color: rgb(243, 160, 174);
+        width: 100%;
+        margin:0%;
+        
+    }  
+    
+    .img_carousel{
+        max-height: 250px;
+        width: 70%;
+    }
