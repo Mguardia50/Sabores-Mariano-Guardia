@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
     <title>Sabores Mariano Guardia</title>
 </head>
@@ -49,66 +51,190 @@
 
 
     <section>
-        <h2 class="h2_sya">ÁCIDULANTES</h2>
-        <ul class="lista">
+        <div class="accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        ACIDULANTES
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul class="lista">
 
-            <div class="muestra">
-                <li class="lista_muestra">Ácido Cítrico</li>
-                <button class="btn_muestra">Solicitar Muestra</button>
+                            <div class="muestra">
+                                <li class="lista_muestra">Ácido cítrico}</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                            <div class="muestra">
+                                <li class="lista_muestra">Ácido Málico</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                            <div class="muestra">
+                                <li class="lista_muestra">Ácido Tartárico</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                            <div class="muestra">
+                                <li class="lista_muestra">Ácido Fosfórico</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="muestra">
-                <li class="lista_muestra">Ácido Málico</li>
-                <button class="btn_muestra">Solicitar Muestra</button>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        CONSERVANTES
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul class="lista">
+                            <div class="muestra">
+                                <li class="lista_muestra">Benzoato de sodio</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                            <div class="muestra">
+                                <li class="lista_muestra">Benzoato de potasio</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                            <div class="muestra">
+                                <li class="lista_muestra">Natamicina</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                            <div class="muestra">
+                                <li class="lista_muestra">lisozima</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                            <div class="muestra">
+                                <li class="lista_muestra">Metabisulfito de sodio</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="muestra">
-                <li class="lista_muestra">Ácido tartárico</li>
-                <button class="btn_muestra">Solicitar Muestra</button>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        EDULCORANTES
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul class="lista">
+                            <div class="muestra">
+                                <li class="lista_muestra">Ciclamato</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                            <div class="muestra">
+                                <li class="lista_muestra">Sacarina</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                            <div class="muestra">
+                                <li class="lista_muestra">Acesulfame K</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                            <div class="muestra">
+                                <li class="lista_muestra">Sucralosa</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                            <div class="muestra">
+                                <li class="lista_muestra">Stevia</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                            <div class="muestra">
+                                <li class="lista_muestra">SIE: Edulcorante personalizado</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                
+                        </ul>
+                    </div>
+                </div>
             </div>
-             
-        </ul>
-        <h2 class="h2_sya">EDULCORANTES</h2>
-        <ul class="lista">
-            <div class="muestra">
-                <li class="lista_muestra">Sacarina</li>
-                <button class="btn_muestra">Solicitar Muestra</button>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        COLORANTES
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul class="lista">
+                            <div class="muestra">
+                                <li class="lista_muestra">Rojo punzo</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                            <div class="muestra">
+                                <li class="lista_muestra">Azul brillante</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                            <div class="muestra">
+                                <li class="lista_muestra">Tartrazina</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                            <div class="muestra">
+                                <li class="lista_muestra">Amarillo ocaso</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                            <div class="muestra">
+                                <li class="lista_muestra">Amaranto</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                            <div class="muestra">
+                                <li class="lista_muestra">Dióxido de titanio</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                            <div class="muestra">
+                                <li class="lista_muestra">Licopeno</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                            <div class="muestra">
+                                <li class="lista_muestra">Beta caroteno</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                            <div class="muestra">
+                                <li class="lista_muestra">Cúrcuma</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="muestra">
-                <li class="lista_muestra">Ciclamato</li>
-                <button class="btn_muestra">Solicitar Muestra</button>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        ANTIOXIDANTES
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul class="lista">
+                            <div class="muestra">
+                                <li class="lista_muestra">Ácido Ascórbico</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                            <div class="muestra">
+                                <li class="lista_muestra">BHT</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                            <div class="muestra">
+                                <li class="lista_muestra">BHA</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                            <div class="muestra">
+                                <li class="lista_muestra">TBHQ</li>
+                                <button class="btn_muestra">Solicitar Muestra</button>
+                            </div>
+                            
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="muestra">
-                <li class="lista_muestra">Acesulfame K</li>
-                <button class="btn_muestra">Solicitar Muestra</button>
-            </div>
-            <div class="muestra">
-                <li class="lista_muestra">Sucralosa</li>
-                <button class="btn_muestra">Solicitar Muestra</button>
-            </div>
-            <div class="muestra">
-                <li class="lista_muestra">Stevia</li>
-                <button class="btn_muestra">Solicitar Muestra</button>
-            </div>
-        </ul>
+        </div>
 
-        <h2 class="h2_sya">OTROS INGREDIENTES</h2>
-        <ul class="lista">
-            <div class="muestra">
-                <li class="lista_muestra">Otro ingrediente</li>
-                <button class="btn_muestra">Solicitar Muestra</button>
-            </div>
-            <div class="muestra">
-                <li class="lista_muestra">Otro ingrediente</li>
-                <button class="btn_muestra">Solicitar Muestra</button>
-            </div>
-            <div class="muestra">
-                <li class="lista_muestra">Otro ingrediente</li>
-                <button class="btn_muestra">Solicitar Muestra</button>
-            </div>
-            <div class="muestra">
-                <li class="lista_muestra">Otro ingrediente</li>
-                <button class="btn_muestra">Solicitar Muestra</button>
-            </div>
-        </ul>
+        
     </section>
 
     
