@@ -423,7 +423,8 @@
   display: grid;
   grid-template-columns: 70% 70% 70%;
   grid-template-rows: 200px 50px;
-  grid-template-areas: "comen comen comen" "nada nada boton"; }
+  grid-template-areas: "comen comen comen"
+ "nada nada boton"; }
 
 #coment {
   position: relative;
@@ -674,6 +675,6 @@ html {
   min-height: calc(100vh - 70px); }
 
 footer {
-  bottom: -70px; }
+  bottom: -140px; }
 
 /*Para que el footer siempre esté abajo*/
