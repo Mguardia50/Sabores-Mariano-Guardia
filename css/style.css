@@ -207,6 +207,9 @@
   padding-left: 10px;
   padding-right: 10px; }
 
+.section_SeI {
+  margin-bottom: 100px; }
+
 /*MOBILE-----------Listas pag SABORES E INGREDIENTES--------*/
 /*MOBILE-----------Listas pag SABORES E INGREDIENTES--------*/
 /*MOBILE-----------Listas pag SABORES E INGREDIENTES--------*/
@@ -409,12 +412,13 @@
   transform: scale(1.3, 1.3); }
 
 .section_contacto {
-  display: flex; }
+  display: flex;
+  margin-bottom: 100px; }
 
 .field_contacto {
   display: flex;
   flex-direction: column;
-  height: 1000px;
+  height: 1100px;
   padding: 5%;
   justify-content: space-between; }
 
@@ -423,8 +427,7 @@
   display: grid;
   grid-template-columns: 70% 70% 70%;
   grid-template-rows: 200px 50px;
-  grid-template-areas: "comen comen comen"
- "nada nada boton"; }
+  grid-template-areas: "comen comen comen" "nada nada boton"; }
 
 #coment {
   position: relative;
@@ -439,7 +442,7 @@
   display: flex;
   flex-direction: column;
   width: 50%;
-  height: 1000px;
+  height: 1100px;
   background-color: #860920;
   align-items: center; }
 
@@ -675,6 +678,6 @@ html {
   min-height: calc(100vh - 70px); }
 
 footer {
-  bottom: -140px; }
+  bottom: -70px; }
 
 /*Para que el footer siempre esté abajo*/
