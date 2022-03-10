@@ -1,0 +1,61 @@
+@keyframes achicar{
+    0%{
+        transform: scale(1,1);
+    }
+
+    50%{
+        transform: scale(0.8,0.8);
+    }
+
+    100%{
+            transform: scale(1,1);
+    }
+}
+
+@keyframes rotar{ /*le iba a usar y al final no, pero dejo la animacion programada por siaca*/
+    0%{
+        transform: scale(2,2);
+    }
+
+    25%{
+        transform: rotate(-90deg);
+    }
+    50%{
+        transform: scale(2,2);
+    }
+    75%{
+        transform: rotate(-90deg);
+    }
+    100%{
+        transform: scale(2,2);
+    }
+}
+
+@keyframes movete{
+
+    0%{
+        content: "";
+
+    }
+    25%{
+        content: "M";
+        color: black;
+    }
+
+    50%{
+        content: "ME";
+        color: black;  
+      }
+    
+    75%{
+        content: "MEN";
+        color: black;
+    }
+
+    100%{
+        content: "MENU";
+        color: black;
+    }
+    
+
+}

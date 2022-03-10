@@ -1,0 +1,34 @@
+.imgMain_index{
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+    background-color:  $colorSabores ;
+}
+
+.imgSection_index{
+    width: 80%;
+    height: 70%;
+}
+
+.btn_muestra{
+    background-color:  $colorSabores;
+    color: white;
+    padding: 5px;
+
+    &:hover{
+        transform: scale(1.1,1.1);
+    }
+}
+
+
+
+.circulo { /*esto lo hice para probar, es más fácil con imágen*/
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    border: 2px solid black;
+  }
+
+  

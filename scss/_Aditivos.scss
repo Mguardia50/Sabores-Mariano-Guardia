@@ -1,0 +1,211 @@
+
+.buscar_aditivos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnBuscar_aditivos{
+    padding: 0%;
+    margin: 0%;
+    height: 30px;
+}
+
+.index_aditivos{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.div_aditivos{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.parrafo_aditivos{
+    padding: 0px;
+    text-align: left;
+}
+
+.toxicidad{
+    display:flex;
+    width: 70%;
+    justify-content: space-evenly;
+}
+
+.vinculos_aditivos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box_aditivos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.checkbox_aditivos{
+    
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.btnCheck_aditivos{
+    margin-left: 10px;
+}
+
+
+.labelAditivos{
+    display: none;
+}
+
+#menuAditivos{
+    display: none;
+}
+
+.click_aditivos{
+    display: none;
+}
+
+
+
+/*MOBILE-------------PAGINA ADITIVOS-----------*/
+/*MOBILE-------------PAGINA ADITIVOS-----------*/
+/*MOBILE-------------PAGINA ADITIVOS-----------*/
+
+@media only screen and (max-width:915px){
+
+    .index_aditivos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .toxicidad{
+        display:flex;
+        width: 100%;
+        margin-top: 10px;
+        justify-content: space-evenly;
+    }
+
+    .circulo { /*esto lo hice para probar, es más fácil con imágen*/
+        width: 30px;
+        height: 30px;
+      }
+
+
+    .vinculos_aditivos{
+        display: none;
+    }
+
+    .labelAditivos{
+        display: flex;
+        background-color: $colorSabores;
+        color: white;
+        font-size: larger;
+        justify-content: center;
+    }
+
+    .parrafo_aditivos{
+        text-align: center;
+    }
+
+    input:checked  ~ .vinculos_aditivos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+
+   
+}
+
+@media only screen and (max-width:700px){
+    .boxParrafo_aditivos{
+        display: none;
+    }
+    .click_aditivos{
+        display: flex;
+        width: 100px;
+        height: 60px;
+        padding-left: 5px;
+        background-color: rgb(235, 231, 231);
+        color: $colorSabores;
+        font-size: 15px;
+        text-align: center;
+    }
+    .click_aditivos:focus ~ .boxParrafo_aditivos{
+        display: flex;
+        bottom: 20%;
+        right: 50px;
+        position: fixed;
+        z-index: 1;
+        border: 1px solid black;
+        background-color: white;
+       
+    }
+    
+}
+
+@media only screen and (max-width:500px){
+
+    .box_aditivos{
+        display: flex;
+        flex-direction: column;
+    }
+    .toxicidad{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .buscar_aditivos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div_aditivos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:400px){
+    input:checked  ~ .vinculos_aditivos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+}
+
+/*----------------boostrap items-----------------*/
+
+.card{
+    margin: 20px;
+
+    &-text{
+        color: white;
+    }
+
+    &-body{
+        padding: 0;       
+    }
+    &-footer{
+        padding: 0;
+    }
+}
+
+
+.footer_card{
+   color: black;
+   transform: scale(1.3,1.3);
+}

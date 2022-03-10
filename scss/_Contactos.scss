@@ -1,0 +1,123 @@
+
+.section_contacto{
+    display: flex;
+}
+
+.field_contacto{
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    padding: 5%;
+    justify-content: space-between;
+}
+
+.div_comment{
+    overflow: visible;
+    display: grid;
+    grid-template-columns: 70% 70% 70%;
+    grid-template-rows: 200px 50px;
+    grid-template-areas: "comen comen comen"
+                        "nada nada boton";
+   
+}
+
+#coment{
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+    grid-area: comen;
+}
+.form_contacto{
+    width: 50%;
+}
+
+
+.aside_contacto{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 1000px;
+    background-color:  $colorSabores;
+    align-items: center;
+}
+
+.div_consulta{
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+    margin-top: 30px;
+}
+
+input[type="submit"]{  
+
+    overflow: visible;
+    position: sticky;
+    padding: 2%;
+    margin-top: 10px;
+    grid-area: boton;
+
+
+}
+
+
+#info_contacto{
+    font-family: 'Bellota';
+    font-size: 40px;
+    margin-top: 30px;
+    line-height: 70px;
+}
+
+#muestrasSolicitadas{
+    width: 60%;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+@media only screen and (min-width:1399px){
+
+    .field_contacto{
+        height: 1500px;
+    }
+
+    .aside_contacto{
+        height: 1500px;
+    }
+
+}
+
+/*MOBILE--------------CONTACTO---------------*/
+/*MOBILE--------------CONTACTO---------------*/
+/*MOBILE--------------CONTACTO---------------*/
+
+
+
+
+@media only screen and (max-width:760px){
+
+
+    .div_comment{
+        display: flex;
+        flex-direction: column;
+    }
+    h5{
+        font-size: large;
+    }
+    .terminosYcondiciones{
+        display: flex;
+    }
+    
+}
+
+@media only screen and (max-width:560px){
+    .section_contacto{
+        display: flex;
+        flex-direction: column;
+    }
+    .aside_contacto{
+        width: 100%;
+        height: 500px;
+    }
+    .form_contacto{
+        width: 100%;
+    }
+}

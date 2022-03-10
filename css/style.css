@@ -1,912 +1,679 @@
-/* INDICE
-linea - Contenido
-23      Codigos generales
-41      Header, footer y navegación
-116     MOBILE Header, footer y navegación
-176     Mains y secciones
-223     MOBILE Mains y secciones
-265     Parrafos y titulos
-350     Imágenes, botones y logos
-391     Listas pag SABORES E INGREDIENTES
-427     MOBILE Listas pag SABORES E INGREDIENTES
-461     PAGINA ADITIVOS
-542     MOBILE PAGINA ADITIVOS
-640     CONTACTO
-716     MOBILE CONTACTO
-750     ANIMACIONES
-817     BOOSTRAP ITEMS
-821         -index
-851         -Sabores e ingredientes
+@charset "UTF-8";
+@keyframes achicar {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.8, 0.8); }
+  100% {
+    transform: scale(1, 1); } }
 
-*/
+@keyframes rotar {
+  /*le iba a usar y al final no, pero dejo la animacion programada por siaca*/
+  0% {
+    transform: scale(2, 2); }
+  25% {
+    transform: rotate(-90deg); }
+  50% {
+    transform: scale(2, 2); }
+  75% {
+    transform: rotate(-90deg); }
+  100% {
+    transform: scale(2, 2); } }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@keyframes movete {
+  0% {
+    content: ""; }
+  25% {
+    content: "M";
+    color: black; }
+  50% {
+    content: "ME";
+    color: black; }
+  75% {
+    content: "MEN";
+    color: black; }
+  100% {
+    content: "MENU";
+    color: black; } }
 
-.body_index{
-    background-image: linear-gradient(to bottom, white, white ,var(--colorSabores),white, white );
-}
+.imgMain_index {
+  width: 100%;
+  height: 100%;
+  padding: 3px;
+  background-color: #860920; }
 
-html{
-    position: relative;
-    min-height: calc(100vh - 70px);
-}
+.imgSection_index {
+  width: 80%;
+  height: 70%; }
 
-:root{
-    --colorSabores:rgb(134, 9, 32); /*color principal de la pagina rgb 134, 9, 32*/
-}
-/*--------------------Header, footer y navegación-------------------*/
-/*--------------------Header, footer y navegación-------------------*/
-/*--------------------Header, footer y navegación-------------------*/
+.btn_muestra {
+  background-color: #860920;
+  color: white;
+  padding: 5px; }
+  .btn_muestra:hover {
+    transform: scale(1.1, 1.1); }
 
-.encabezado{
-    background-color: white;
-    display: flex;
-    align-items: center;
-    border-bottom: 2px solid black;
-}
+.circulo {
+  /*esto lo hice para probar, es más fácil con imágen*/
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  border: 2px solid black; }
 
-.logoSabores{
-    margin: 10px;
-    display: flex;
-    width: 30%;
-}
+.main_indexMOBILE {
+  display: none; }
 
-.navegador{
-    padding-top: 20px;
-    font-size: large;
-    width: 70%;
-    height: auto;
-}
+.main_index {
+  height: 1000px;
+  display: grid;
+  grid-template-columns: 1ft 1ft;
+  grid-template-rows: 100px 400px 400px;
+  grid-template-areas: "titulo titulo" "texto1 imagen1" "imagen2 texto2";
+  row-gap: 5px;
+  column-gap: 5px;
+  align-items: center; }
 
-.listaNav{
-    
-    padding: 0%;
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    align-items: center;
-    
-}
+#grillatitulo_main {
+  grid-area: titulo; }
 
-.vinculos:link{
-    text-decoration: none;
-}
+.section_index {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
 
-.vinculos :hover{
-    transform: scale(1.25,1.25);
-    font-weight: bolder;
-    color: black;
-}
+.boxSection_index {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  align-items: center;
+  border: 2px solid black;
+  margin: 10px;
+  box-shadow: 10px 10px black;
+  background-color: white; }
+  .boxSection_index:hover {
+    animation-name: achicar;
+    animation-duration: 2s;
+    background-color: #ff6786;
+    box-shadow: none; }
 
+#grilla1_main {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: solid #860920 2px;
+  grid-area: texto1; }
 
-li{ 
-    transform: scale(1.1,1.1);
-    font-family: 'Bellota';
-    list-style: none;
-    color: var(--colorSabores);
-}
+#grilla4_main {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #860920;
+  grid-area: texto2; }
 
-footer{
-    width: 100%;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    margin-top: 30px;
-    margin-bottom: 0px;
-    background-color: var(--colorSabores);
-    position: absolute;
-    bottom: -70px;
-}
+.parrafo_index {
+  padding: 3%; }
 
-.footerParrafo{
-    color: white;
-}
+.h2_index {
+  font-family: 'Bellota';
+  text-align: center;
+  color: black;
+  white-space: nowrap; }
 
-#menuHamburguesa{
-    display: none;
-}
-.labelHamburguesa{
-    display: none;
-} 
-
-
-/* MOBILE--------------------Header, footer y navegación-------------------*/
-/* MOBILE--------------------Header, footer y navegación-------------------*/
-/* MOBILE--------------------Header, footer y navegación-------------------*/
-@media only screen and (max-width:999px){ 
-    #menuHamburguesa{
-        display: none;
-    }
-
-    .labelHamburguesa{
-        padding: 5px;
-        display: flex;
-        font-size: larger;
-        font-weight: bold;
-    } 
-
-    
-    .listaNav{
-    
-        display: none;
-        
-    }
-    
-    input:checked  ~ .listaNav{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .labelHamburguesa::after{
-        padding-left: 5px;
-        padding-top: 2px; /*hay diferencia en los paddings por la letra, sin esto no se veia bien*/
-        font-family: 'Bellota';
-        content: "MENU";
-        animation-name: movete;
-        animation-duration: 3s;
-    }
-
-    .encabezado{
-          display: flex;
-          align-items:center;
-          justify-content: space-between;
-      }
-
-    .navegador{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          width: 40%;
-          padding: 5px;
-          background-image: linear-gradient(to left, pink, white, pink);
-          border: 2px solid var(--colorSabores);   
-        
-      }
-
-    footer{
-        bottom: -140px;
-    }
-
-}
-
-/*------------------Mains y secciones-----------------------------*/
-/*------------------Mains y secciones-----------------------------*/
-/*------------------Mains y secciones-----------------------------*/
-
-.main_indexMOBILE{
-    display: none;
-}
-.main_index{
-    height: 1000px;
-    display: grid;
-    grid-template-columns: 1ft 1ft;
-    grid-template-rows: 100px 400px 400px;
-    grid-template-areas: "titulo titulo"
-                        "texto1 imagen1" /*aca pasa algo, ¿deberia darle ID a las 2 imagenes para posicionar cada una en su respectiva grid? se colocan correctamente SOLO dado a casualidad y eso no me gusta*/
-                        "imagen2 texto2";
-    row-gap: 5px;
-    column-gap: 5px;
-    align-items: center;
-}
-
-
-
-.section_index{
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.boxSection_index{
+/* MOBILE------------------Mains y secciones-----------------------------*/
+/* MOBILE------------------Mains y secciones-----------------------------*/
+/* MOBILE------------------Mains y secciones-----------------------------*/
+@media only screen and (max-width: 799px) {
+  .imgMain_index {
+    display: none; }
+  .main_index {
+    display: none; }
+  .main_indexMOBILE {
+    margin-top: 5px;
     display: flex;
     flex-direction: column;
-    padding: 5px;
-    align-items: center;   
-    border: 2px solid black;
-    margin: 10px;
-    box-shadow: 10px 10px black;
-    background-color: white;
-}
-
-.boxSection_index:hover{
-   animation-name: achicar;
-   animation-duration: 2s; 
-   background-color: rgb(255, 103, 134);
-   box-shadow: none;
-}
-
-/* MOBILE------------------Mains y secciones-----------------------------*/
-/* MOBILE------------------Mains y secciones-----------------------------*/
-/* MOBILE------------------Mains y secciones-----------------------------*/
-
-@media only screen and (max-width:799px){
-
-    .imgMain_index{
-      display: none;
-    }
-    .main_index{
-        display: none;
-    }
-
-    .main_indexMOBILE{
-        margin-top: 5px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: white;
-        border:2px solid var(--colorSabores);
-    }
-
-
-    .p_indexMOBILE{
-        color: white;
-        background-color: var(--colorSabores);
-    }
-    .section_index{
-        display: none;
-    }
-
-    .boxSection_index{
-        height: 250px;
-        width: 250px;
-        border: none;
-        box-shadow: none;
-        background-color: transparent;
-    }
-
-}
-
-
-/*---------------------Parrafos y titulos-----------------------*/
-/*---------------------Parrafos y titulos-----------------------*/
-/*---------------------Parrafos y titulos-----------------------*/
-
-#grillatitulo_main{
-    grid-area: titulo;
-}
-
-h1{
-    font-family: 'Bellota', cursive;
-    color: var(--colorSabores);
-    font-weight: bold;
-    margin: 20px;
-    text-align: center;
-}
-
-#grilla1_main{
-    display: flex;
     align-items: center;
-    width: 100%;
-    height: 100%;
     background-color: white;
-    border: solid var(--colorSabores) 2px;
-    grid-area: texto1;
-}
-
-.parrafo_index{
-    
-    padding: 3%;
-}
-
-p{
-    font-family: 'Bellota';
-    font-size: large;
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    line-height: 40px;
-    margin: 0;
-}
-
-#grilla4_main{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color:  var(--colorSabores) ;
-    grid-area: texto2;
-    
-}
-
-.redParrafo{
-    
+    border: 2px solid #860920; }
+  .p_indexMOBILE {
     color: white;
-    padding: 3%;
-}
+    background-color: #860920; }
+  .section_index {
+    display: none; }
+  .boxSection_index {
+    height: 250px;
+    width: 250px;
+    border: none;
+    box-shadow: none;
+    background-color: transparent; } }
 
-.h2_index{
-    font-family: 'Bellota';
-    text-align: center;
-    color: black;
-    white-space: nowrap;
-}
+@media only screen and (max-width: 420px) {
+  .h2_index {
+    font-size: 20px; } }
 
-h2{
-    color:var(--colorSabores) ;
-    font-weight: bold;
-    font-family: 'Bellota';
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-
-h3{
-    color: blue;
-    text-decoration: underline;
-    text-align: center;
-}
-
-h4{
-    margin-left: 5px;
-}
-
-
-
-/*---------------------Imágenes, botones y logos-----------------------*/
-/*---------------------Imágenes, botones y logos-----------------------*/
-/*---------------------Imágenes, botones y logos-----------------------*/
-
-.imgMain_index{
+/*----------------boostrap items-----------------*/
+.carousel {
+  background-image: linear-gradient(to bottom, white, pink, white);
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .carousel-control-prev-icon {
+    background-color: crimson; }
+  .carousel-control-next-icon {
+    background-color: crimson; }
+  .carousel-indicators {
+    background-color: #f3a0ae;
     width: 100%;
-    height: 100%;
-    padding: 3px;
-    background-color:  var(--colorSabores) ;
-}
-.imgSection_index{
-    width: 80%;
-    height: 70%;
-}
-.btn_muestra{
-    background-color:  var(--colorSabores);
-    color: white;
-    padding: 5px;
-}
-.btn_muestra:hover{
-    transform: scale(1.1,1.1);
-}
+    margin: 0%; }
 
-.circulo { /*esto lo hice para probar, es más fácil con imágen*/
-    width: 50px;
-    height: 50px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 25px;
-    border: 2px solid black;
-  }
+.img_carousel {
+  max-height: 250px;
+  width: 70%; }
 
-  .cuadrado {
-    width: auto; 
-    height: auto; 
-    padding: 5px;
-    margin-left: 15px;
-    margin-right: 10px;
-}
+.lista {
+  display: grid;
+  row-gap: 30px;
+  justify-items: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, white, #d88a97, white);
+  padding: 0%;
+  padding-bottom: 20px; }
 
+.muestra {
+  border: 2px solid #860920;
+  background-color: white;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  align-items: center; }
+  .muestra:hover {
+    border: 4px solid black; }
 
-/*-----------------------Listas pag SABORES E INGREDIENTES------------------------------*/
-/*-----------------------Listas pag SABORES E INGREDIENTES------------------------------*/
-/*-----------------------Listas pag SABORES E INGREDIENTES------------------------------*/
-.lista{
-    display: grid;
-    row-gap: 30px;
-    justify-items: center;
-    align-items: center;
-    background-image: linear-gradient(to bottom, white , rgb(216, 138, 151), white );
-    padding: 0%;
-    padding-bottom: 20px;
-    
-}
-.muestra{
-    border: 2px solid var(--colorSabores) ;
-    background-color: white;
-    width: 150px;
-    height: 150px;
+.lista_muestra {
+  text-align: center;
+  display: flex;
+  color: #860920;
+  font-weight: bold;
+  font-family: 'Bellota';
+  padding-left: 10px;
+  padding-right: 10px; }
+
+/*MOBILE-----------Listas pag SABORES E INGREDIENTES--------*/
+/*MOBILE-----------Listas pag SABORES E INGREDIENTES--------*/
+/*MOBILE-----------Listas pag SABORES E INGREDIENTES--------*/
+@media only screen and (min-width: 850px) {
+  .lista {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; } }
+
+@media only screen and (max-width: 850px) {
+  .lista {
+    grid-template-columns: 1fr 1fr 1fr 1fr; } }
+
+@media only screen and (max-width: 720px) {
+  .lista {
+    grid-template-columns: 1fr 1fr 1fr; } }
+
+@media only screen and (max-width: 500px) {
+  .lista {
+    grid-template-columns: 1fr 1fr; } }
+
+/*----------------boostrap items-----------------*/
+.accordion-body {
+  padding: 0;
+  padding-top: 30px; }
+
+.accordion-button {
+  font-weight: bold;
+  font-size: large;
+  font-family: 'Bellota';
+  background-color: #860920;
+  color: white;
+  border: 1px solid black; }
+
+.accordion-item {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 0; }
+
+.accordion-button::after {
+  transform: scale(2, 2);
+  background-image: url("../img/Iconos/flecha_negra.png"); }
+
+.accordion-button:not(.collapsed) {
+  color: crimson;
+  background-color: pink; }
+  .accordion-button:not(.collapsed)::after {
+    transform: scale(2, 2);
+    background-image: url("../img/Iconos/flecha_roja.png");
+    animation-name: rotar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; }
+
+.buscar_aditivos {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#btnBuscar_aditivos {
+  padding: 0%;
+  margin: 0%;
+  height: 30px; }
+
+.index_aditivos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px; }
+
+.div_aditivos {
+  display: flex;
+  align-items: baseline;
+  justify-content: center; }
+
+.parrafo_aditivos {
+  padding: 0px;
+  text-align: left; }
+
+.toxicidad {
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly; }
+
+.vinculos_aditivos {
+  display: flex;
+  justify-content: space-evenly; }
+
+.box_aditivos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid black;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.checkbox_aditivos {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  margin-left: 10px; }
+
+.btnCheck_aditivos {
+  margin-left: 10px; }
+
+.labelAditivos {
+  display: none; }
+
+#menuAditivos {
+  display: none; }
+
+.click_aditivos {
+  display: none; }
+
+/*MOBILE-------------PAGINA ADITIVOS-----------*/
+/*MOBILE-------------PAGINA ADITIVOS-----------*/
+/*MOBILE-------------PAGINA ADITIVOS-----------*/
+@media only screen and (max-width: 915px) {
+  .index_aditivos {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center; }
+  .toxicidad {
+    display: flex;
+    width: 100%;
     margin-top: 10px;
-    align-items: center;
-    }
-.muestra:hover{
-    border: 4px solid black;
-}
-.lista_muestra{
-    text-align: center;
+    justify-content: space-evenly; }
+  .circulo {
+    /*esto lo hice para probar, es más fácil con imágen*/
+    width: 30px;
+    height: 30px; }
+  .vinculos_aditivos {
+    display: none; }
+  .labelAditivos {
     display: flex;
-    color:var(--colorSabores) ;
-    font-weight: bold;
-    font-family: 'Bellota';
-    padding-left: 10px;
-    padding-right: 10px;
-}
-/*MOBILE-----------Listas pag SABORES E INGREDIENTES--------*/
-/*MOBILE-----------Listas pag SABORES E INGREDIENTES--------*/
-/*MOBILE-----------Listas pag SABORES E INGREDIENTES--------*/
+    background-color: #860920;
+    color: white;
+    font-size: larger;
+    justify-content: center; }
+  .parrafo_aditivos {
+    text-align: center; }
+  input:checked ~ .vinculos_aditivos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center; } }
 
-@media only screen and (min-width:850px){
-    .lista{
-
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
-    }
-}
-
-@media only screen and (max-width:850px){
-    .lista{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-}
-
-
-
-@media only screen and (max-width:720px){
-    .lista{
-        grid-template-columns: 1fr 1fr 1fr;
-
-    }
-}   
-
-@media only screen and (max-width:500px){
-    .lista{
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-/*-----------------------PAGINA ADITIVOS------------------------------*/
-/*-----------------------PAGINA ADITIVOS------------------------------*/
-/*-----------------------PAGINA ADITIVOS------------------------------*/
-
-
-.buscar_aditivos{
+@media only screen and (max-width: 700px) {
+  .boxParrafo_aditivos {
+    display: none; }
+  .click_aditivos {
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#btnBuscar_aditivos{
-    padding: 0%;
-    margin: 0%;
-    height: 30px;
-}
-
-.index_aditivos{
+    width: 100px;
+    height: 60px;
+    padding-left: 5px;
+    background-color: #ebe7e7;
+    color: #860920;
+    font-size: 15px;
+    text-align: center; }
+  .click_aditivos:focus ~ .boxParrafo_aditivos {
     display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.div_aditivos{
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-}
-
-.parrafo_aditivos{
-    padding: 0px;
-    text-align: left;
-}
-
-.toxicidad{
-    display:flex;
-    width: 70%;
-    justify-content: space-evenly;
-}
-
-.vinculos_aditivos{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.box_aditivos{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 2px solid black;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.checkbox_aditivos{
-    
-    display: flex;
-    flex-direction: column;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.btnCheck_aditivos{
-    margin-left: 10px;
-}
-
-
-.labelAditivos{
-    display: none;
-}
-
-#menuAditivos{
-    display: none;
-}
-
-.click_aditivos{
-    display: none;
-}
-
-
-
-/*MOBILE-------------PAGINA ADITIVOS-----------*/
-/*MOBILE-------------PAGINA ADITIVOS-----------*/
-/*MOBILE-------------PAGINA ADITIVOS-----------*/
-
-@media only screen and (max-width:915px){
-
-    .index_aditivos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .toxicidad{
-        display:flex;
-        width: 100%;
-        margin-top: 10px;
-        justify-content: space-evenly;
-    }
-
-    .circulo { /*esto lo hice para probar, es más fácil con imágen*/
-        width: 30px;
-        height: 30px;
-      }
-
-
-    .vinculos_aditivos{
-        display: none;
-    }
-
-    .labelAditivos{
-        display: flex;
-        background-color: var(--colorSabores);
-        color: white;
-        font-size: larger;
-        justify-content: center;
-    }
-
-    .parrafo_aditivos{
-        text-align: center;
-    }
-
-    input:checked  ~ .vinculos_aditivos{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-content: center;
-    }
-
-   
-}
-
-@media only screen and (max-width:700px){
-    .boxParrafo_aditivos{
-        display: none;
-    }
-    .click_aditivos{
-        display: flex;
-        width: 100px;
-        height: 60px;
-        padding-left: 5px;
-        background-color: rgb(235, 231, 231);
-        color: var(--colorSabores);
-        font-size: 15px;
-        text-align: center;
-    }
-    .click_aditivos:focus ~ .boxParrafo_aditivos{
-        display: flex;
-        bottom: 20%;
-        right: 50px;
-        position: fixed;
-        z-index: 1;
-        border: 1px solid black;
-        background-color: white;
-       
-    }
-    
-}
-
-@media only screen and (max-width:500px){
-    .toxicidad{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .buscar_aditivos{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .div_aditivos{
-        display: flex;
-        flex-direction: column;
-    }
-
-
-}
-/*------------CONTACTO------------------*/
-/*------------CONTACTO------------------*/
-/*------------CONTACTO------------------*/
-
-
-.section_contacto{
-    display: flex;
-}
-
-.field_contacto{
-    display: flex;
-    flex-direction: column;
-    height: 1000px;
-    padding: 5%;
-    justify-content: space-between;
-}
-
-#coment{
-    position: relative;
+    bottom: 20%;
+    right: 50px;
+    position: fixed;
     z-index: 1;
-    overflow: visible;
-    grid-area: comen;
-}
-.form_contacto{
-    width: 50%;
-}
+    border: 1px solid black;
+    background-color: white; } }
 
-
-.aside_contacto{
+@media only screen and (max-width: 500px) {
+  .box_aditivos {
+    display: flex;
+    flex-direction: column; }
+  .toxicidad {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 1000px;
-    background-color:  var(--colorSabores);
+    align-items: center; }
+  .buscar_aditivos {
+    display: flex;
     align-items: center;
-}
-
-.div_consulta{
+    justify-content: center; }
+  .div_aditivos {
     display: flex;
     flex-direction: column;
-    line-height: 25px;
-}
+    align-items: center; } }
 
-input[type="submit"]{  
-
-    overflow: visible;
-    position: sticky;
-    padding: 2%;
-    margin-top: 10px;
-    grid-area: boton;
-
-
-}
-
-.div_comment{
-    overflow: visible;
+@media only screen and (max-width: 400px) {
+  input:checked ~ .vinculos_aditivos {
     display: grid;
-    grid-template-columns: 70% 70% 70%;
-    grid-template-rows: 200px 50px;
-    grid-template-areas: "comen comen comen"
-                        "nada nada boton";
-   
-}
-#info_contacto{
-    font-family: 'Bellota';
-    font-size: 40px;
-    padding: 5%;
-    line-height: 70px;
-}
+    grid-template-columns: 1fr 1fr;
+    justify-content: center; } }
 
-#muestrasSolicitadas{
-    width: 60%;
-    height: 200px;
-    overflow-y: scroll;
-}
+/*----------------boostrap items-----------------*/
+.card {
+  margin: 20px; }
+  .card-text {
+    color: white; }
+  .card-body {
+    padding: 0; }
+  .card-footer {
+    padding: 0; }
+
+.footer_card {
+  color: black;
+  transform: scale(1.3, 1.3); }
+
+.section_contacto {
+  display: flex; }
+
+.field_contacto {
+  display: flex;
+  flex-direction: column;
+  height: 1000px;
+  padding: 5%;
+  justify-content: space-between; }
+
+.div_comment {
+  overflow: visible;
+  display: grid;
+  grid-template-columns: 70% 70% 70%;
+  grid-template-rows: 200px 50px;
+  grid-template-areas: "comen comen comen" "nada nada boton"; }
+
+#coment {
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+  grid-area: comen; }
+
+.form_contacto {
+  width: 50%; }
+
+.aside_contacto {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 1000px;
+  background-color: #860920;
+  align-items: center; }
+
+.div_consulta {
+  display: flex;
+  flex-direction: column;
+  line-height: 35px;
+  margin-top: 30px; }
+
+input[type="submit"] {
+  overflow: visible;
+  position: sticky;
+  padding: 2%;
+  margin-top: 10px;
+  grid-area: boton; }
+
+#info_contacto {
+  font-family: 'Bellota';
+  font-size: 40px;
+  margin-top: 30px;
+  line-height: 70px; }
+
+#muestrasSolicitadas {
+  width: 60%;
+  height: 200px;
+  overflow-y: scroll; }
+
+@media only screen and (min-width: 1399px) {
+  .field_contacto {
+    height: 1500px; }
+  .aside_contacto {
+    height: 1500px; } }
 
 /*MOBILE--------------CONTACTO---------------*/
 /*MOBILE--------------CONTACTO---------------*/
 /*MOBILE--------------CONTACTO---------------*/
+@media only screen and (max-width: 760px) {
+  .div_comment {
+    display: flex;
+    flex-direction: column; }
+  h5 {
+    font-size: large; }
+  .terminosYcondiciones {
+    display: flex; } }
 
+@media only screen and (max-width: 560px) {
+  .section_contacto {
+    display: flex;
+    flex-direction: column; }
+  .aside_contacto {
+    width: 100%;
+    height: 500px; }
+  .form_contacto {
+    width: 100%; } }
 
-@media only screen and (max-width:760px){
+.encabezado {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid black; }
 
-    
-    .div_comment{
-        display: flex;
-        flex-direction: column;
-    }
-    h5{
-        font-size: large;
-    }
-    .terminosYcondiciones{
-        display: flex;
-    }
-    
-}
+.logoSabores {
+  margin: 10px;
+  display: flex;
+  width: 30%; }
 
-@media only screen and (max-width:560px){
-    .section_contacto{
-        display: flex;
-        flex-direction: column;
-    }
-    .aside_contacto{
-        width: 100%;
-        height: 500px;
-    }
-    .form_contacto{
-        width: 100%;
-    }
-}
-/*--------------------ANIMACIONES-------------------------------*/
-/*--------------------ANIMACIONES-------------------------------*/
-/*--------------------ANIMACIONES-------------------------------*/
+.navegador {
+  padding-top: 20px;
+  font-size: large;
+  width: 70%;
+  height: auto; }
 
-@keyframes achicar{
-    0%{
-        transform: scale(1,1);
-    }
+.listaNav {
+  padding: 0%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center; }
 
-    50%{
-        transform: scale(0.8,0.8);
-    }
+.vinculos:link {
+  text-decoration: none; }
 
-    100%{
-            transform: scale(1,1);
-    }
-}
+.vinculos:hover {
+  transform: scale(1.25, 1.25);
+  font-weight: bolder;
+  color: black; }
 
-@keyframes rotar{ /*le iba a usar y al final no, pero dejo la animacion programada por siaca*/
-    0%{
-        transform: scale(2,2);
-    }
+li {
+  transform: scale(1.1, 1.1);
+  font-family: 'Bellota';
+  list-style: none;
+  color: #860920; }
 
-    25%{
-        transform: rotate(-90deg);
-    }
-    50%{
-        transform: scale(2,2);
-    }
-    75%{
-        transform: rotate(-90deg);
-    }
-    100%{
-        transform: scale(2,2);
-    }
-}
+footer {
+  width: 100%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  background-color: #860920;
+  position: absolute; }
 
-@keyframes movete{
+.footerParrafo {
+  color: white; }
 
-    0%{
-        content: "";
+#menuHamburguesa {
+  display: none; }
 
-    }
-    25%{
-        content: "M";
-        color: black;
-    }
+.labelHamburguesa {
+  display: none; }
 
-    50%{
-        content: "ME";
-        color: black;  
-      }
-    
-    75%{
-        content: "MEN";
-        color: black;
-    }
+/* MOBILE--------------------Header, footer y navegación-------------------*/
+/* MOBILE--------------------Header, footer y navegación-------------------*/
+/* MOBILE--------------------Header, footer y navegación-------------------*/
+@media only screen and (max-width: 999px) {
+  #menuHamburguesa {
+    display: none; }
+  .labelHamburguesa {
+    padding: 5px;
+    display: flex;
+    font-size: larger;
+    font-weight: bold; }
+    .labelHamburguesa::after {
+      padding-left: 5px;
+      padding-top: 2px;
+      /*hay diferencia en los paddings por la letra, sin esto no se veia bien*/
+      font-family: 'Bellota';
+      content: "MENU";
+      animation-name: movete;
+      animation-duration: 3s; }
+  .listaNav {
+    display: none; }
+  input:checked ~ .listaNav {
+    display: flex;
+    flex-direction: column; }
+  .encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .navegador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 5px;
+    background-image: linear-gradient(to left, pink, white, pink);
+    border: 2px solid #860920; } }
 
-    100%{
-        content: "MENU";
-        color: black;
-    }
-    
+@media only screen and (max-width: 420px) {
+  .logoSabores {
+    display: none; }
+  .navegador {
+    width: 100% !important; }
+  .footerParrafo {
+    font-size: 15px; } }
 
-}
+#grillatitulo_main {
+  grid-area: titulo; }
 
+h1 {
+  font-family: 'Bellota', cursive;
+  color: #860920;
+  font-weight: bold;
+  margin: 20px;
+  text-align: center; }
 
-/*----------------boostrap items-----------------*/
-/*----------------boostrap items-----------------*/
-/*----------------boostrap items-----------------*/
+#grilla1_main {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: solid #860920 2px;
+  grid-area: texto1; }
 
-/*--------------INDEX-----------------------*/
-    .carousel{
-        background-image: linear-gradient(to bottom, white, pink, white);
-        height: 450px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+.parrafo_index {
+  padding: 3%; }
 
-    .carousel-control-prev-icon {
-        background-color: crimson;
-        
-    }
-        
-    .carousel-control-next-icon {
-    background-color: crimson;
-      }
+p {
+  font-family: 'Bellota';
+  font-size: large;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  margin: 0; }
 
-    .carousel-indicators{
-        background-color: rgb(243, 160, 174);
-        width: 100%;
-        margin:0%;
-        
-    }  
-    
-    .img_carousel{
-        max-height: 250px;
-        width: 70%;
-    }
+#grilla4_main {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #860920;
+  grid-area: texto2; }
 
-/*--------------SABORES E INGREDIENTES-----------------------*/
+.redParrafo {
+  color: white;
+  padding: 3%; }
 
+.h2_index {
+  font-family: 'Bellota';
+  text-align: center;
+  color: black;
+  white-space: nowrap; }
 
-    .accordion-body{
-        padding: 0;
-        padding-top: 30px;
-    }
+h2 {
+  color: #860920;
+  font-weight: bold;
+  font-family: 'Bellota';
+  margin-top: 15px;
+  margin-bottom: 15px; }
 
+h3 {
+  color: blue;
+  text-decoration: underline;
+  text-align: center; }
 
-    .accordion-button{
-        font-weight: bold;
-        font-size: large;
-        font-family: 'Bellota';
-        background-color:var(--colorSabores) ;
-        color: white;
-        border: 1px solid black; 
-    }
+h4 {
+  margin-left: 5px; }
 
-    .accordion-item{
-        margin-top: 30px;
-        margin-bottom: 30px;
-        border: 0;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-    .accordion-button:not(.collapsed) {
-        color: crimson;
-        background-color: pink;
-        box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
-    }
+.body_index {
+  background-image: linear-gradient(to bottom, white, white, #860920, white, white); }
 
-    .accordion-button::after{
-        transform: scale(2,2);
-        background-image: url("../img/Iconos/flecha_negra.png");
-    }
-    .accordion-button:not(.collapsed)::after {
-        transform: scale(2,2);
-       background-image: url("../img/Iconos/flecha_roja.png");
-        animation-name: rotar;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-    }
-    
-    .card{
-        margin: 20px;
-    }
+/*Para que el footer siempre esté abajo*/
+html {
+  position: relative;
+  min-height: calc(100vh - 70px); }
 
-    .card-body{
-        padding: 0;
-        
-    }
+footer {
+  bottom: -70px; }
 
-    .card-text{
-        color: white;
-    }
-
-    .card-footer{
-        padding: 0;
-    }
-    .footer_card{
-       color: black;
-       transform: scale(1.3,1.3);
-   }
+/*Para que el footer siempre esté abajo*/

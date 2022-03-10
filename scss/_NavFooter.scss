@@ -1,0 +1,146 @@
+
+.encabezado{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+.logoSabores{
+    margin: 10px;
+    display: flex;
+    width: 30%;
+}
+
+.navegador{
+    padding-top: 20px;
+    font-size: large;
+    width: 70%;
+    height: auto;
+}
+
+.listaNav{
+    
+    padding: 0%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+    
+}
+
+.vinculos{
+
+    &:link{
+        text-decoration: none;
+    }
+
+    &:hover{
+        transform: scale(1.25,1.25);
+        font-weight: bolder;
+        color: black;
+    }
+}
+
+li{ 
+    transform: scale(1.1,1.1);
+    font-family: 'Bellota';
+    list-style: none;
+    color: $colorSabores;
+}
+
+footer{
+    width: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    background-color: $colorSabores;
+    position: absolute;
+}
+
+.footerParrafo{
+    color: white;
+}
+
+#menuHamburguesa{
+    display: none;
+}
+.labelHamburguesa{
+    display: none;
+} 
+
+
+/* MOBILE--------------------Header, footer y navegación-------------------*/
+/* MOBILE--------------------Header, footer y navegación-------------------*/
+/* MOBILE--------------------Header, footer y navegación-------------------*/
+
+@media only screen and (max-width:999px){ 
+    #menuHamburguesa{
+        display: none;
+    }
+
+    .labelHamburguesa{
+        padding: 5px;
+        display: flex;
+        font-size: larger;
+        font-weight: bold;
+
+        &::after{
+            padding-left: 5px;
+            padding-top: 2px; /*hay diferencia en los paddings por la letra, sin esto no se veia bien*/
+            font-family: 'Bellota';
+            content: "MENU";
+            animation-name: movete;
+            animation-duration: 3s;
+        }
+    } 
+
+    
+    .listaNav{
+    
+        display: none;
+        
+    }
+    
+    input:checked  ~ .listaNav{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .encabezado{
+          display: flex;
+          align-items:center;
+          justify-content: space-between;
+      }
+
+    .navegador{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 40%;
+          padding: 5px;
+          background-image: linear-gradient(to left, pink, white, pink);
+          border: 2px solid $colorSabores;   
+        
+      }
+
+
+}
+
+@media only screen and (max-width:420px){
+
+    .logoSabores{
+        display: none;
+    }
+    
+    .navegador{
+        width: 100% !important;
+    }
+
+    .footerParrafo{
+        font-size: 15px;
+    }
+}
