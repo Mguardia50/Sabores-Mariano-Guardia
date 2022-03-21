@@ -1,1 +1,25 @@
 $colorSabores: rgb(134, 9, 32);
+$colorHover: rgb(255, 68, 99);
+
+@mixin colorDegradado ($donde, $color1, $color2, $color3, $color4){
+    
+    background-image: linear-gradient(to $donde, $color1 ,$color2,$color3 );
+
+    @if $donde == "bottom" or $donde == "top"{
+        &:hover{
+            background-image: linear-gradient(to $donde, $color1 ,$color4, $color3);
+        }
+    }
+
+    @else if $donde == "left" or $donde == "right"{
+        &:hover{
+            background-image: linear-gradient(to $donde, $color4 ,$color1, $color4);
+        }
+    }
+}
+
+.flexMid{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

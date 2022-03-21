@@ -1,0 +1,60 @@
+Sabores Mariano Guardia Changelog
+
+Sabores Mariano Guardia V 0.5)
+
+---------GENERAL--------
+
+-Se creó la documentación de cambios changelog.txt
+-Se agregaron las keywords para motores de busquedas según cada sección
+-Se agregó una descripción según cada sección para que figuré en los motores de búsqueda
+-Se cambió el título de cada página
+
+---------VARIABLES---------
+
+-Se creó la variable $colorHover para cambiar siempre que haya un hover
+-Se agrego @mixin para ser una variable de colores degradados y un hover para enfatizar la posición del mouse
+-Se agrego como @extend en variables la clase .flexMid, la cual es repetida, cuenta con:
+	display: flex;
+    	align-items: center;
+    	justify-content: space-evenly;
+
+---------IMAGENES--------
+
+-se borro una imagen innecesaria; no hubo necesidad de cambios en las imagenes dado a su bajo tamaño
+
+---------NAV---------
+
+-Se cambió la fuente del NAV a color negro para mejorar la visibilidad
+
+---------INDEX---------
+
+-El hover de los iconos ya solo aparecera a partir de tamaños de pantalla mayores a 799px
+-Se quitó el color de fondo del carrousel
+
+---------SABORES e INGREDIENTES--------
+
+-Agregados los siguientes sabores:
+
+	SABORES FRUTALES (34)
+	SABORES PARA BEBIDAS (15)
+	SABORES SALADOS (36)
+	OTROS SABORES (30)
+	EMULSIONES (7)
+
+-Agregados los siguientes ingredientes:
+
+	ANTI AGLOMERANTES (1)
+	COLORANTES (1)
+	EMULSIONANTES (3)
+	TEXTURIZANTES Y SOLUCIONES EN TEXTURA (9)
+	POTENCIADORES DE SABOR (3)
+	OTROS INGREDIENTES E INGREDIENTES NATURALES (11)
+
+---------ADITIVOS------------------
+
+-Debido a que esta pagina podría ser un sitio web nuevo y el extenso trabajo que se necesita,
+se añadió la parte "Sitio en contrucción" a la sección aditivos. También se quitaron los lorem y
+remplazaron por descripción real.
+
+-Se cambió el color de los supuestos links y su tipografia, se @extendio de la clase h2_index
+

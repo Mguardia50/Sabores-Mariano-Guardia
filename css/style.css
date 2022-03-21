@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.flexMid, .section_index, .muestra, .index_aditivos, .toxicidad, .vinculos_aditivos, .listaNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+
 @keyframes achicar {
   0% {
     transform: scale(1, 1); }
@@ -79,10 +84,7 @@
   grid-area: titulo; }
 
 .section_index {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly; }
+  margin-top: 20px; }
 
 .boxSection_index {
   display: flex;
@@ -96,7 +98,7 @@
   .boxSection_index:hover {
     animation-name: achicar;
     animation-duration: 2s;
-    background-color: #ff6786;
+    background-color: #ff4463;
     box-shadow: none; }
 
 #grilla1_main {
@@ -119,7 +121,7 @@
 .parrafo_index {
   padding: 3%; }
 
-.h2_index {
+.h2_index, h3 {
   font-family: 'Bellota';
   text-align: center;
   color: black;
@@ -150,15 +152,17 @@
     width: 250px;
     border: none;
     box-shadow: none;
+    background-color: transparent; }
+  .boxSection_index:hover {
+    animation: none;
     background-color: transparent; } }
 
 @media only screen and (max-width: 420px) {
-  .h2_index {
+  .h2_index, h3 {
     font-size: 20px; } }
 
 /*----------------boostrap items-----------------*/
 .carousel {
-  background-image: linear-gradient(to bottom, white, pink, white);
   height: 450px;
   display: flex;
   align-items: center;
@@ -177,24 +181,23 @@
   width: 70%; }
 
 .lista {
+  background-image: linear-gradient(to bottom, white, #d88a97, white);
   display: grid;
   row-gap: 30px;
   justify-items: center;
   align-items: center;
-  background-image: linear-gradient(to bottom, white, #d88a97, white);
   padding: 0%;
   padding-bottom: 20px; }
+  .lista:hover {
+    background-image: linear-gradient(to bottom, white, #ff4463, white); }
 
 .muestra {
   border: 2px solid #860920;
   background-color: white;
   width: 150px;
   height: 150px;
-  display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  margin-top: 10px;
-  align-items: center; }
+  margin-top: 10px; }
   .muestra:hover {
     border: 4px solid black; }
 
@@ -275,8 +278,6 @@
   height: 30px; }
 
 .index_aditivos {
-  display: flex;
-  justify-content: center;
   margin-bottom: 30px; }
 
 .div_aditivos {
@@ -289,18 +290,12 @@
   text-align: left; }
 
 .toxicidad {
-  display: flex;
-  width: 70%;
-  justify-content: space-evenly; }
-
-.vinculos_aditivos {
-  display: flex;
-  justify-content: space-evenly; }
+  width: 70%; }
 
 .box_aditivos {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   border: 2px solid black;
   padding-top: 20px;
   padding-bottom: 20px; }
@@ -520,10 +515,7 @@ input[type="submit"] {
 
 .listaNav {
   padding: 0%;
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-  align-items: center; }
+  list-style: none; }
 
 .vinculos:link {
   text-decoration: none; }
@@ -537,7 +529,7 @@ li {
   transform: scale(1.1, 1.1);
   font-family: 'Bellota';
   list-style: none;
-  color: #860920; }
+  color: black; }
 
 footer {
   width: 100%;
@@ -593,7 +585,9 @@ footer {
     width: 40%;
     padding: 5px;
     background-image: linear-gradient(to left, pink, white, pink);
-    border: 2px solid #860920; } }
+    border: 2px solid #860920; }
+    .navegador:hover {
+      background-image: linear-gradient(to left, #ff4463, pink, #ff4463); } }
 
 @media only screen and (max-width: 420px) {
   .logoSabores {
@@ -646,7 +640,7 @@ p {
   color: white;
   padding: 3%; }
 
-.h2_index {
+.h2_index, h3 {
   font-family: 'Bellota';
   text-align: center;
   color: black;
@@ -660,9 +654,8 @@ h2 {
   margin-bottom: 15px; }
 
 h3 {
-  color: blue;
-  text-decoration: underline;
-  text-align: center; }
+  color: #860920;
+  text-decoration: underline; }
 
 h4 {
   margin-left: 5px; }

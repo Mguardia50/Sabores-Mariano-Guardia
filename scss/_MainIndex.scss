@@ -20,9 +20,7 @@
 
 .section_index{
     margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    @extend .flexMid;
 }
 
 .boxSection_index{
@@ -38,7 +36,7 @@
         &:hover{
             animation-name: achicar;
             animation-duration: 2s; 
-            background-color: rgb(255, 103, 134);
+            background-color: $colorHover;
             box-shadow: none;
         }
 }
@@ -116,6 +114,10 @@
         background-color: transparent;
     }
 
+    .boxSection_index:hover{
+        animation: none;
+        background-color: transparent ;
+    }
 }
 
 @media only screen and (max-width:420px){
@@ -126,7 +128,6 @@
 /*----------------boostrap items-----------------*/
 
 .carousel{
-    background-image: linear-gradient(to bottom, white, pink, white);
     height: 450px;
     display: flex;
     align-items: center;

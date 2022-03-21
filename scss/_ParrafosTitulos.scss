@@ -69,9 +69,9 @@ h2{
 
 
 h3{
-    color: blue;
+    @extend .h2_index;
+    color: $colorSabores;
     text-decoration: underline;
-    text-align: center;
 }
 
 h4{
