@@ -53,30 +53,30 @@
     <section class="section_contacto">
 
         
-        <form class="form_contacto" action="">
+        <form class="form_contacto" action="../enviar.php" method="post" enctype="text/plain">
             
             <fieldset class="field_contacto">
                 <h2>DEJANOS TU MENSAJE</h2>
                 <div class="div_consulta">
                     <label for="nombre">NOMBRE O RAZÓN SOCIAL</label>
-                    <input type="text" placeholder="Ingrese su nombre o razón social" id="nombre">
+                    <input type="text" placeholder="Ingrese su nombre o razón social" id="nombre" name="nombre">
                 </div>
                 <div class="div_consulta">
                     <label for="email">EMAIL</label>
-                    <input type="text" placeholder="Ingrese su mail" id="email">
+                    <input type="text" placeholder="Ingrese su mail" id="email" name="email">
                 </div>
                 <div class="div_consulta">
                     <label for="tel">TELÉFONO</label>
-                    <input type="number" placeholder="Ingrese el teléfono de contacto" id="tel">
+                    <input type="number" placeholder="Ingrese el teléfono de contacto" id="tel" name="telefono">
                 </div>
                 <div class="div_consulta">
                     <label for="asunto">ASUNTO</label>
-                    <input type="text" placeholder="Ingrese su asunto" id="asunto">
+                    <input type="text" placeholder="Ingrese su asunto" id="asunto" name="asunto">
                 </div>
                 <div class="div_consulta">
                     <label for="coment">INGRESE SU CONSULTA</label>
                     <div class="div_comment">
-                        <textarea name="" id="coment" cols="30" rows="10"></textarea>
+                        <textarea id="coment" cols="30" rows="10" name="consulta"></textarea>
                         <input type="submit" value="ENVIAR CONSULTA">
                     </div>
                 </div>
