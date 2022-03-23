@@ -1,6 +1,9 @@
 Sabores Mariano Guardia Changelog
 
+Sabores Mariano Guardia V 0.6)
 
+-Se añadió enviar.php para enviar mails al formulario.
+-Se creo una pagina HTML nueva a la que se redirecciona una vez enviado el formulario de contacto.
 
 Sabores Mariano Guardia V 0.5)
 
