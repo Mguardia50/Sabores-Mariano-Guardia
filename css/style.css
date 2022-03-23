@@ -78,7 +78,12 @@
   grid-template-areas: "titulo titulo" "texto1 imagen1" "imagen2 texto2";
   row-gap: 5px;
   column-gap: 5px;
-  align-items: center; }
+  align-items: center;
+  justify-items: center; }
+
+@media (min-width: 799px) and (max-width: 1050px) {
+  .main_index {
+    grid-template-rows: 100px 300px 300px; } }
 
 #grillatitulo_main {
   grid-area: titulo; }
@@ -436,6 +441,10 @@
 .form_contacto {
   width: 50%; }
 
+.form_box {
+  font-size: 20px;
+  width: 80%; }
+
 .aside_contacto {
   display: flex;
   flex-direction: column;
@@ -477,6 +486,10 @@ input[type="submit"] {
 /*MOBILE--------------CONTACTO---------------*/
 /*MOBILE--------------CONTACTO---------------*/
 /*MOBILE--------------CONTACTO---------------*/
+@media only screen and (max-width: 880px) {
+  .form_box {
+    width: 100%; } }
+
 @media only screen and (max-width: 760px) {
   .div_comment {
     display: flex;

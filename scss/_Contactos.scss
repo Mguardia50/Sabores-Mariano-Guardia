@@ -32,6 +32,10 @@
     width: 50%;
 }
 
+.form_box{
+    font-size: 20px;
+    width: 80%;
+}
 
 .aside_contacto{
     display: flex;
@@ -84,6 +88,7 @@ input[type="submit"]{
         height: 1500px;
     }
 
+    
 }
 
 /*MOBILE--------------CONTACTO---------------*/
@@ -91,7 +96,11 @@ input[type="submit"]{
 /*MOBILE--------------CONTACTO---------------*/
 
 
-
+@media only screen and (max-width:880px){
+    .form_box{
+        width: 100%;
+    }
+}
 
 @media only screen and (max-width:760px){
 
@@ -106,6 +115,7 @@ input[type="submit"]{
     .terminosYcondiciones{
         display: flex;
     }
+    
     
 }
 

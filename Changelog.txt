@@ -1,5 +1,11 @@
 Sabores Mariano Guardia Changelog
 
+Sabores Mariano Guardia V 0.61)
+
+-Se despixelo el logo y se le paso a formato png
+-Se bajo la altura de grids para resolucion en index entre 799px y 1050px para que las imagenes se amolden de forma correcta
+-Se aumento el tamaño de texto en contacto, se bajo el ancho a 80% y se añadio media querry para llevarlo a 100 ante 850px
+
 Sabores Mariano Guardia V 0.6)
 
 -Se añadió enviar.php para enviar mails al formulario.

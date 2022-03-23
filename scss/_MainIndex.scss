@@ -12,6 +12,15 @@
     row-gap: 5px;
     column-gap: 5px;
     align-items: center;
+    justify-items: center;
+}
+
+@media (min-width:799px) AND (max-width:1050px){
+    .main_index{
+
+        grid-template-rows: 100px 300px 300px;
+    
+    }
 }
 
 #grillatitulo_main{
