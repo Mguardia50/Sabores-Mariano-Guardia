@@ -1,13 +1,15 @@
 .main_indexMOBILE{
     display: none;
+    
 }
 .main_index{
     height: 1000px;
     display: grid;
     grid-template-columns: 1ft 1ft;
-    grid-template-rows: 100px 400px 400px;
+    grid-template-rows: 100px 400px 20px 400px;
     grid-template-areas: "titulo titulo"
-                        "texto1 imagen1" /*aca pasa algo, ¿deberia darle ID a las 2 imagenes para posicionar cada una en su respectiva grid? se colocan correctamente SOLO dado a casualidad y eso no me gusta*/
+                        "texto1 imagen1"
+                        "sabores sabores"
                         "imagen2 texto2";
     row-gap: 5px;
     column-gap: 5px;
@@ -27,6 +29,16 @@
     grid-area: titulo;
 }
 
+.imgCentral_index{
+    z-index: 1;
+    margin-left: -300px;
+    height: 250px;
+    width: 450px;
+    transform: rotate(40deg);
+    grid-area: sabores;
+    animation-name: rotar;
+    animation-duration: 10s;
+}
 .section_index{
     margin-top: 20px;
     @extend .flexMid;
@@ -56,9 +68,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    height: 100%;
-    background-color: white;
-    border: solid $colorSabores 2px;
+    height: 100%;  
     grid-area: texto1;
 }
 
@@ -67,15 +77,12 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color:  $colorSabores ;
+    
     grid-area: texto2;
     
 }
 
-.parrafo_index{
-    
-    padding: 3%;
-}
+
 
 .h2_index{
     font-family: 'Bellota';
