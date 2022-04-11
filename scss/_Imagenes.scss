@@ -1,7 +1,9 @@
 .imgMain_index{
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     padding: 3px;
+    border: 2px solid $colorSabores;
+    background-color: $colorSabores;
 }
 
 
@@ -20,7 +22,10 @@
     }
 }
 
-
+.img_representada{
+    max-height: 100%;
+    max-width: 100%;
+}
 
 .circulo { /*esto lo hice para probar, es más fácil con imágen*/
     width: 50px;

@@ -70,6 +70,24 @@ footer{
 } 
 
 
+@media (min-width:1700px) AND (max-width:2500px){
+    li{
+        transform: scale(1.5,1.5);
+    }
+}
+
+@media (min-width:2500px){
+    li{
+        transform: scale(2.2,2.2);
+    }
+}
+
+@media (min-width:3200px){
+    li{
+        transform: scale(3,3);
+    }
+}
+
 /* MOBILE--------------------Header, footer y navegación-------------------*/
 /* MOBILE--------------------Header, footer y navegación-------------------*/
 /* MOBILE--------------------Header, footer y navegación-------------------*/
