@@ -7,27 +7,14 @@
 .field_contacto{
     display: flex;
     flex-direction: column;
-    height: 1100px;
-    padding: 5%;
-    justify-content: space-between;
+    height: 600px;
+    padding-right: 5%;
+    padding-left: 20px;
+    justify-content: center;
+    border: none;
 }
 
-.div_comment{
-    overflow: visible;
-    display: grid;
-    grid-template-columns: 70% 70% 70%;
-    grid-template-rows: 200px 50px;
-    grid-template-areas: "comen comen comen"
-                        "nada nada boton";
-   
-}
 
-#coment{
-    position: relative;
-    z-index: 1;
-    overflow: visible;
-    grid-area: comen;
-}
 .form_contacto{
     width: 50%;
 }
@@ -35,22 +22,27 @@
 .form_box{
     font-size: 20px;
     width: 80%;
+    box-shadow: 10px 7px $colorSabores;
 }
 
 .aside_contacto{
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 1100px;
+    height: 600px;
     background-color:  $colorSabores;
     align-items: center;
+    justify-content: center;
+    border: none;
 }
 
 .div_consulta{
     display: flex;
     flex-direction: column;
+    align-items: center;
     line-height: 35px;
-    margin-top: 30px;
+    margin-top: 10px;
+
 }
 
 input[type="submit"]{  
@@ -66,30 +58,25 @@ input[type="submit"]{
 
 
 #info_contacto{
+    
     font-family: 'Bellota';
-    font-size: 40px;
-    margin-top: 30px;
-    line-height: 70px;
+    font-size: 30px;
+    margin-top: 50px;
+    line-height: 40px;
+    color: white;
+    
 }
 
 #muestrasSolicitadas{
     width: 60%;
     height: 200px;
-    overflow-y: scroll;
+    font-size: 17px;
+    background-color: transparent;
+    color: white;
+    box-shadow: 10px 7px white;
 }
 
-@media only screen and (min-width:1399px){
 
-    .field_contacto{
-        height: 1500px;
-    }
-
-    .aside_contacto{
-        height: 1500px;
-    }
-
-    
-}
 
 /*MOBILE--------------CONTACTO---------------*/
 /*MOBILE--------------CONTACTO---------------*/
@@ -112,14 +99,13 @@ input[type="submit"]{
     h5{
         font-size: large;
     }
-    .terminosYcondiciones{
-        display: flex;
-    }
     
+    
+   
     
 }
 
-@media only screen and (max-width:560px){
+@media only screen and (max-width:625px){
     .section_contacto{
         display: flex;
         flex-direction: column;

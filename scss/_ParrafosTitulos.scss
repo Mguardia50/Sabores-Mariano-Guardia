@@ -1,7 +1,5 @@
 
-#grillatitulo_main{
-    grid-area: titulo;
-}
+
 
 h1{
     font-family: 'Bellota', cursive;
@@ -11,15 +9,6 @@ h1{
     text-align: center;
 }
 
-#grilla1_main{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    border: solid $colorSabores 2px;
-    grid-area: texto1;
-}
 
 
 
@@ -27,6 +16,8 @@ h1{
     
     padding: 3%;
 }
+
+
 
 p{
     font-family: 'Bellota';
@@ -38,15 +29,6 @@ p{
     margin: 0;
 }
 
-#grilla4_main{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color:  $colorSabores ;
-    grid-area: texto2;
-    
-}
 
 .redParrafo{
     
@@ -67,6 +49,19 @@ h2{
     font-family: 'Bellota';
     margin-top: 15px;
     margin-bottom: 15px;
+    text-align: center;
+}
+
+.h2_contacto{
+    @extend h2;
+    color: white;
+}
+
+label{
+    font-family: 'Bellota';
+    color: $colorSabores;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 
@@ -78,4 +73,88 @@ h3{
 
 h4{
     margin-left: 5px;
+}
+
+.h2_index{
+    font-family: 'Bellota';
+    text-align: center;
+    color: $colorSabores;
+    white-space: nowrap;
+}
+
+/* OTRAS RESOLUCIONES*/
+/* OTRAS RESOLUCIONES*/
+/* OTRAS RESOLUCIONES*/
+
+@media (min-width:1400px) AND (max-width:1700px){
+    p{
+        font-size: 20px; 
+    }
+
+    .parrafo_index{
+
+        font-size: 25px;
+    
+    }
+
+    .h2_index{
+        font-size: 35px;
+    }
+
+    .redParrafo{
+    
+        font-size: 25px;
+    }
+}
+
+@media (min-width:1700px) AND (max-width:2600px) {
+
+    p{
+        font-size: 25px; 
+    }
+    .parrafo_index{
+
+        font-size: 30px;
+    
+    }
+
+
+    .redParrafo{
+    
+        font-size: 30px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    .h2_index{
+        font-size: 45px;
+    }
+}
+
+
+@media (min-width:2600px) {
+    p{
+        font-size: 30px; 
+    }
+
+    .parrafo_index{
+
+        font-size: 50px;
+        line-height: 70px;
+    }
+
+    .redParrafo{
+    
+        font-size: 50px;
+        line-height: 70px;
+    }
+
+    h1{
+        font-size: 70px;
+    }
+    .h2_index{
+        font-size: 55px;
+    }
 }

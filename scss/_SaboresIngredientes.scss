@@ -36,11 +36,74 @@
 .section_SeI{
     margin-bottom: 100px;
 }
+
+.btn_muestra{
+    background-color:  $colorSabores;
+    color: white;
+    padding: 5px;
+
+    &:hover{
+        transform: scale(1.05,1.05);
+    }
+}
+
+/*MAYORES RESOLUCIONES*/
+
+@media (min-width:1875px) AND (max-width:2500px){
+    .lista{
+
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .muestra{
+        width: 240px;
+        height: 240px;
+    }
+}
+
+@media (min-width:2500px) AND (max-width:3000px){
+    .lista{
+
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .muestra{
+        width: 330px;
+        height: 330px;
+    }
+}
+
+@media (min-width:3000px){
+    .lista{
+
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .muestra{
+        width: 400px;
+        height: 400px;
+    }
+}
+
 /*MOBILE-----------Listas pag SABORES E INGREDIENTES--------*/
 /*MOBILE-----------Listas pag SABORES E INGREDIENTES--------*/
 /*MOBILE-----------Listas pag SABORES E INGREDIENTES--------*/
 
-@media only screen and (min-width:850px){
+@media (min-width:1250px) AND (max-width:1875px){
+    
+    .lista{
+
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .muestra{
+        width: 185px;
+        height: 185px;
+    }
+    
+}
+
+@media (min-width:850px) AND (max-width:1250px){
     .lista{
 
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -119,3 +182,21 @@
 }
 
 
+@media (min-width:1400px) AND (max-width:1700px){
+
+    .accordion-button{
+        font-size: 25px;
+    }
+}
+
+@media (min-width:1700px) AND (max-width:2600px) {
+    .accordion-button{
+        font-size: 35px;
+    }
+}
+
+@media (min-width:2600px) {
+    .accordion-button{
+        font-size: 45px;
+    }
+}

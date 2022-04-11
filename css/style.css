@@ -45,6 +45,7 @@
   width: 100%;
   height: 100%;
   padding: 3px;
+  border: 2px solid #860920;
   background-color: #860920; }
 
 .imgSection_index {
@@ -57,6 +58,10 @@
   padding: 5px; }
   .btn_muestra:hover {
     transform: scale(1.1, 1.1); }
+
+.img_representada {
+  max-height: 100%;
+  max-width: 100%; }
 
 .circulo {
   /*esto lo hice para probar, es más fácil con imágen*/
@@ -71,19 +76,16 @@
   display: none; }
 
 .main_index {
+  margin-top: 20px;
   height: 1000px;
   display: grid;
-  grid-template-columns: 1ft 1ft;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px 400px 400px;
-  grid-template-areas: "titulo titulo" "texto1 imagen1" "imagen2 texto2";
+  grid-template-areas: "titulo titulo" "texto1 imagen1" "imagen2 texto2";
   row-gap: 5px;
   column-gap: 5px;
   align-items: center;
   justify-items: center; }
-
-@media (min-width: 799px) and (max-width: 1050px) {
-  .main_index {
-    grid-template-rows: 100px 300px 300px; } }
 
 #grillatitulo_main {
   grid-area: titulo; }
@@ -98,7 +100,7 @@
   align-items: center;
   border: 2px solid black;
   margin: 10px;
-  box-shadow: 10px 10px black;
+  box-shadow: 10px 10px #860920;
   background-color: white; }
   .boxSection_index:hover {
     animation-name: achicar;
@@ -111,8 +113,6 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: white;
-  border: solid #860920 2px;
   grid-area: texto1; }
 
 #grilla4_main {
@@ -120,33 +120,80 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: #860920;
-  grid-area: texto2; }
+  border: 2px solid #860920;
+  grid-area: texto2;
+  background-color: #860920; }
 
-.parrafo_index {
-  padding: 3%; }
+.representadas {
+  margin: 50px;
+  height: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 150px 150px 150px;
+  grid-template-areas: "a0 a0 a0 a0 a0 a0" "a2 a2 a2 a3 a3 a3" "a5 a5 a6 a6 a7 a7" "a8 a8 a8 a9 a9 a9";
+  row-gap: 50px;
+  column-gap: 70px;
+  align-items: center;
+  justify-items: center; }
 
 .h2_index, h3 {
-  font-family: 'Bellota';
-  text-align: center;
-  color: black;
-  white-space: nowrap; }
+  grid-area: a0; }
+
+/* ALTAS RESOLUCIONES */
+@media (min-width: 1400px) and (max-width: 1700px) {
+  .main_index {
+    height: 1200px;
+    grid-template-rows: 100px 500px 500px; } }
+
+@media (min-width: 1700px) and (max-width: 2500px) {
+  .main_index {
+    height: 1400px;
+    grid-template-rows: 100px 600px 600px; }
+  .boxSection_index {
+    width: 600px;
+    height: 600px; } }
+
+@media (min-width: 2500px) and (max-width: 3100px) {
+  .main_index {
+    height: 1800px;
+    grid-template-rows: 100px 800px 800px; }
+  .boxSection_index {
+    width: 800px;
+    height: 800px; } }
+
+@media (min-width: 3100px) {
+  .main_index {
+    height: 2600px;
+    grid-template-rows: 100px 1200px 1200px; }
+  .boxSection_index {
+    width: 1000px;
+    height: 1000px; } }
 
 /* MOBILE------------------Mains y secciones-----------------------------*/
 /* MOBILE------------------Mains y secciones-----------------------------*/
 /* MOBILE------------------Mains y secciones-----------------------------*/
+@media (min-width: 799px) and (max-width: 1050px) {
+  .main_index {
+    grid-template-rows: 100px 300px 300px; } }
+
 @media only screen and (max-width: 799px) {
   .imgMain_index {
     display: none; }
   .main_index {
     display: none; }
   .main_indexMOBILE {
+    margin-bottom: 70px;
+    /* es 70 porque el footer tiene -70 para que en toda página este abajo */
     margin-top: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: white;
     border: 2px solid #860920; }
+  .representadas {
+    margin: 20px;
+    row-gap: 20px;
+    column-gap: 40px; }
   .p_indexMOBILE {
     color: white;
     background-color: #860920; }
@@ -163,6 +210,8 @@
     background-color: transparent; } }
 
 @media only screen and (max-width: 420px) {
+  .representadas {
+    display: none; }
   .h2_index, h3 {
     font-size: 20px; } }
 
@@ -218,10 +267,46 @@
 .section_SeI {
   margin-bottom: 100px; }
 
+.btn_muestra {
+  background-color: #860920;
+  color: white;
+  padding: 5px; }
+  .btn_muestra:hover {
+    transform: scale(1.05, 1.05); }
+
+/*MAYORES RESOLUCIONES*/
+@media (min-width: 1875px) and (max-width: 2500px) {
+  .lista {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+  .muestra {
+    width: 240px;
+    height: 240px; } }
+
+@media (min-width: 2500px) and (max-width: 3000px) {
+  .lista {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+  .muestra {
+    width: 330px;
+    height: 330px; } }
+
+@media (min-width: 3000px) {
+  .lista {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+  .muestra {
+    width: 400px;
+    height: 400px; } }
+
 /*MOBILE-----------Listas pag SABORES E INGREDIENTES--------*/
 /*MOBILE-----------Listas pag SABORES E INGREDIENTES--------*/
 /*MOBILE-----------Listas pag SABORES E INGREDIENTES--------*/
-@media only screen and (min-width: 850px) {
+@media (min-width: 1250px) and (max-width: 1875px) {
+  .lista {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
+  .muestra {
+    width: 185px;
+    height: 185px; } }
+
+@media (min-width: 850px) and (max-width: 1250px) {
   .lista {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; } }
 
@@ -268,6 +353,18 @@
     animation-name: rotar;
     animation-duration: 2s;
     animation-iteration-count: infinite; }
+
+@media (min-width: 1400px) and (max-width: 1700px) {
+  .accordion-button {
+    font-size: 25px; } }
+
+@media (min-width: 1700px) and (max-width: 2600px) {
+  .accordion-button {
+    font-size: 35px; } }
+
+@media (min-width: 2600px) {
+  .accordion-button {
+    font-size: 45px; } }
 
 .section_aditivos {
   margin-bottom: 100px; }
@@ -421,43 +518,36 @@
 .field_contacto {
   display: flex;
   flex-direction: column;
-  height: 1100px;
-  padding: 5%;
-  justify-content: space-between; }
-
-.div_comment {
-  overflow: visible;
-  display: grid;
-  grid-template-columns: 70% 70% 70%;
-  grid-template-rows: 200px 50px;
-  grid-template-areas: "comen comen comen" "nada nada boton"; }
-
-#coment {
-  position: relative;
-  z-index: 1;
-  overflow: visible;
-  grid-area: comen; }
+  height: 600px;
+  padding-right: 5%;
+  padding-left: 20px;
+  justify-content: center;
+  border: none; }
 
 .form_contacto {
   width: 50%; }
 
 .form_box {
   font-size: 20px;
-  width: 80%; }
+  width: 80%;
+  box-shadow: 10px 7px #860920; }
 
 .aside_contacto {
   display: flex;
   flex-direction: column;
   width: 50%;
-  height: 1100px;
+  height: 600px;
   background-color: #860920;
-  align-items: center; }
+  align-items: center;
+  justify-content: center;
+  border: none; }
 
 .div_consulta {
   display: flex;
   flex-direction: column;
+  align-items: center;
   line-height: 35px;
-  margin-top: 30px; }
+  margin-top: 10px; }
 
 input[type="submit"] {
   overflow: visible;
@@ -468,20 +558,18 @@ input[type="submit"] {
 
 #info_contacto {
   font-family: 'Bellota';
-  font-size: 40px;
-  margin-top: 30px;
-  line-height: 70px; }
+  font-size: 30px;
+  margin-top: 50px;
+  line-height: 40px;
+  color: white; }
 
 #muestrasSolicitadas {
   width: 60%;
   height: 200px;
-  overflow-y: scroll; }
-
-@media only screen and (min-width: 1399px) {
-  .field_contacto {
-    height: 1500px; }
-  .aside_contacto {
-    height: 1500px; } }
+  font-size: 17px;
+  background-color: transparent;
+  color: white;
+  box-shadow: 10px 7px white; }
 
 /*MOBILE--------------CONTACTO---------------*/
 /*MOBILE--------------CONTACTO---------------*/
@@ -495,11 +583,9 @@ input[type="submit"] {
     display: flex;
     flex-direction: column; }
   h5 {
-    font-size: large; }
-  .terminosYcondiciones {
-    display: flex; } }
+    font-size: large; } }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 625px) {
   .section_contacto {
     display: flex;
     flex-direction: column; }
@@ -562,6 +648,18 @@ footer {
 .labelHamburguesa {
   display: none; }
 
+@media (min-width: 1700px) and (max-width: 2500px) {
+  li {
+    transform: scale(1.5, 1.5); } }
+
+@media (min-width: 2500px) {
+  li {
+    transform: scale(2.2, 2.2); } }
+
+@media (min-width: 3200px) {
+  li {
+    transform: scale(3, 3); } }
+
 /* MOBILE--------------------Header, footer y navegación-------------------*/
 /* MOBILE--------------------Header, footer y navegación-------------------*/
 /* MOBILE--------------------Header, footer y navegación-------------------*/
@@ -602,7 +700,7 @@ footer {
     .navegador:hover {
       background-image: linear-gradient(to left, #ff4463, pink, #ff4463); } }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 480px) {
   .logoSabores {
     display: none; }
   .navegador {
@@ -610,24 +708,12 @@ footer {
   .footerParrafo {
     font-size: 15px; } }
 
-#grillatitulo_main {
-  grid-area: titulo; }
-
 h1 {
   font-family: 'Bellota', cursive;
   color: #860920;
   font-weight: bold;
   margin: 20px;
   text-align: center; }
-
-#grilla1_main {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  border: solid #860920 2px;
-  grid-area: texto1; }
 
 .parrafo_index {
   padding: 3%; }
@@ -641,14 +727,6 @@ p {
   line-height: 40px;
   margin: 0; }
 
-#grilla4_main {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: #860920;
-  grid-area: texto2; }
-
 .redParrafo {
   color: white;
   padding: 3%; }
@@ -659,12 +737,22 @@ p {
   color: black;
   white-space: nowrap; }
 
-h2 {
+h2, .h2_contacto {
   color: #860920;
   font-weight: bold;
   font-family: 'Bellota';
   margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  text-align: center; }
+
+.h2_contacto {
+  color: white; }
+
+label {
+  font-family: 'Bellota';
+  color: #860920;
+  font-size: 20px;
+  font-weight: bold; }
 
 h3 {
   color: #860920;
@@ -673,13 +761,58 @@ h3 {
 h4 {
   margin-left: 5px; }
 
+.h2_index, h3 {
+  font-family: 'Bellota';
+  text-align: center;
+  color: #860920;
+  white-space: nowrap; }
+
+/* OTRAS RESOLUCIONES*/
+/* OTRAS RESOLUCIONES*/
+/* OTRAS RESOLUCIONES*/
+@media (min-width: 1400px) and (max-width: 1700px) {
+  p {
+    font-size: 20px; }
+  .parrafo_index {
+    font-size: 25px; }
+  .h2_index, h3 {
+    font-size: 35px; }
+  .redParrafo {
+    font-size: 25px; } }
+
+@media (min-width: 1700px) and (max-width: 2600px) {
+  p {
+    font-size: 25px; }
+  .parrafo_index {
+    font-size: 30px; }
+  .redParrafo {
+    font-size: 30px; }
+  h1 {
+    font-size: 50px; }
+  .h2_index, h3 {
+    font-size: 45px; } }
+
+@media (min-width: 2600px) {
+  p {
+    font-size: 30px; }
+  .parrafo_index {
+    font-size: 50px;
+    line-height: 70px; }
+  .redParrafo {
+    font-size: 50px;
+    line-height: 70px; }
+  h1 {
+    font-size: 70px; }
+  .h2_index, h3 {
+    font-size: 55px; } }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 .body_index {
-  background-image: linear-gradient(to bottom, white, white, #860920, white, white); }
+  background-image: linear-gradient(to bottom, white, white, #860920, white, white, white); }
 
 /*Para que el footer siempre esté abajo*/
 html {

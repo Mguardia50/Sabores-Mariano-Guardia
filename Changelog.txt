@@ -1,5 +1,24 @@
 Sabores Mariano Guardia Changelog
 
+
+Sabores Mariano Guardia V 0.8)
+-Ahora la página funciona en altas resoluciones
+	-Se aumentaron los textos y títulos según su resolucion
+	-Se mejoro las cajas, grids, acordeones para ajustarse a alta resolucion
+-Se quitó el carrousel de la página index para ver todas las representadas al mismo tiempo
+-Agregada las siguientes representadas:
+	-Pampa Creation
+	-Arla foods
+	-DSM
+-Se cambió de lugar el código del botón muestras de _imagenes a _SaboresIngredientes y se achico la escala de hover
+-Se escalo los vinculos del navegador para que se agranden en altas resoluciones
+-En sabores e ingredientes se mejoro el responsive de las cajas
+
+Sabores Mariano Guardia V 0.7)
+-Se rediseño la página de contacto
+-Se borro codigos repetidos en index y parrafos y titulos
+
+
 Sabores Mariano Guardia V 0.61)
 
 -Se despixelo el logo y se le paso a formato png

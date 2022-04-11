@@ -2,7 +2,7 @@
 $nombre = $_POST['nombre'];
 $email = $_POST['email'];
 $telefono = $_POST['telefono'];
-$asunto = $_POST['asunto'];
+$asunto = "Consulta pagina sabores";
 $consulta = $_POST['consulta'];
 
 $header = 'De: ' . $email . " \r\n";
