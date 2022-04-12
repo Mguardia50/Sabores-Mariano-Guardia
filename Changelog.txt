@@ -1,5 +1,7 @@
 Sabores Mariano Guardia Changelog
 
+Sabores Mariano Guardia V 0.81)
+-Se terminó de mejorar los responsives en altas resoluciones
 
 Sabores Mariano Guardia V 0.8)
 -Ahora la página funciona en altas resoluciones

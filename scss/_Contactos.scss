@@ -76,7 +76,58 @@ input[type="submit"]{
     box-shadow: 10px 7px white;
 }
 
+/* ALTAS RESOLUCIONES */
 
+@media (min-width:1400px) AND (max-width:1700px){
+    .field_contacto{
+        height: 700px;
+    }
+
+    .form_box{
+        font-size: 25px;
+    }
+
+    label{
+        font-size: 25px;
+    }
+    .aside_contacto{
+        height: 700px;
+    }
+}
+
+@media (min-width:1700px) AND (max-width:2600px){
+    .field_contacto{
+        height: 850px;
+    }
+
+    .form_box{
+        font-size: 35px;
+    }
+
+    label{
+        font-size: 35px;
+    }
+    .aside_contacto{
+        height: 850px;
+    }
+}
+
+@media (min-width:2600px){
+    .field_contacto{
+        height: 1000px;
+    }
+
+    .form_box{
+        font-size: 45px;
+    }
+
+    label{
+        font-size: 45px;
+    }
+    .aside_contacto{
+        height: 1000px;
+    }
+}
 
 /*MOBILE--------------CONTACTO---------------*/
 /*MOBILE--------------CONTACTO---------------*/
