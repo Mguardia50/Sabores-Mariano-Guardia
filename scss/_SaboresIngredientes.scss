@@ -31,6 +31,7 @@
     font-family: 'Bellota';
     padding-left: 10px;
     padding-right: 10px;
+    word-wrap: break-word;
 }
 
 .section_SeI{
@@ -49,6 +50,22 @@
 
 /*MAYORES RESOLUCIONES*/
 
+@media (min-width:1400px) AND (max-width:1875px){
+    .lista{
+
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .muestra{
+        width: 205px;
+        height: 205px;
+    }
+
+    .btn_muestra{
+        font-size: 20px;
+    }
+}
+
 @media (min-width:1875px) AND (max-width:2500px){
     .lista{
 
@@ -58,6 +75,10 @@
     .muestra{
         width: 240px;
         height: 240px;
+    }
+
+    .btn_muestra{
+        font-size: 25px;
     }
 }
 
@@ -71,6 +92,10 @@
         width: 330px;
         height: 330px;
     }
+
+    .btn_muestra{
+        font-size: 35px;
+    }
 }
 
 @media (min-width:3000px){
@@ -83,13 +108,16 @@
         width: 400px;
         height: 400px;
     }
+    .btn_muestra{
+        font-size: 40px;
+    }
 }
 
 /*MOBILE-----------Listas pag SABORES E INGREDIENTES--------*/
 /*MOBILE-----------Listas pag SABORES E INGREDIENTES--------*/
 /*MOBILE-----------Listas pag SABORES E INGREDIENTES--------*/
 
-@media (min-width:1250px) AND (max-width:1875px){
+@media (min-width:1250px) AND (max-width:1400px){
     
     .lista{
 
