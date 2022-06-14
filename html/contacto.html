@@ -74,7 +74,9 @@
                         <textarea id="coment" name="consulta" cols="30" rows="8" class="form_box"></textarea>
                         <input type="submit" value="ENVIAR CONSULTA" class="btn_muestra" style="margin-top: 20px;">
                 </div>
-                
+                <div class="div_consulta" style="display: none;">
+                        <textarea id="muestrasSolicitadasOculto" name="consulta" cols="30" rows="8" class="form_box"></textarea>
+                </div>
                 
                 
 
@@ -85,8 +87,12 @@
         <aside class="aside_contacto">
 
             <h2 class="h2_contacto">MUESTRAS SOLICITADAS</h2>
-       
-            <textarea name="" id="muestrasSolicitadas" cols="30" rows="10">En construcción, próximamente disponible</textarea>
+            
+            <textarea name="" id="muestrasSolicitadas" cols="30" rows="10"></textarea>
+
+            <!-- <div name="" id="muestrasSolicitadas" cols="30" rows="10">
+                <table id="muestrasSolicitadasTabla"></table>
+            </div> -->
 
             <article id="info_contacto">
                 <h5>CONTACTO</h5>
@@ -106,7 +112,7 @@
         <p class="footerParrafo">Copyright ©  Mariano Guardia Soft. Contacto: +54 9 261 5444-338 mail: mguardia50@hotmail.com Mendoza, Argentina</p>
     </footer> 
 
-
+<script src="../JS/contacto.js"></script>
     
 </body>
 </html>

@@ -4,6 +4,7 @@ $email = $_POST['email'];
 $telefono = $_POST['telefono'];
 $asunto = "Consulta pagina sabores";
 $consulta = $_POST['consulta'];
+$muestras = $_POST['muestras'];
 
 $header = 'De: ' . $email . " \r\n";
 $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
@@ -14,6 +15,7 @@ $mensaje = "Enviado por "  . $nombre . " \r\n";
 $mensaje .= "Mail: " . $email . " \r\n";
 $mensaje .= "Telefono " . $telefono . " \r\n";
 $mensaje .= "Mensaje: " . $consulta . " \r\n";
+$mensaje .= "Muestras: " . $muestras . " \r\n";
 
 $para = 'mguardia@sabores.com.ar';
 

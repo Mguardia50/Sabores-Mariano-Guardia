@@ -12,15 +12,6 @@
     height: 70%;
 }
 
-.btn_muestra{
-    background-color:  $colorSabores;
-    color: white;
-    padding: 5px;
-
-    &:hover{
-        transform: scale(1.1,1.1);
-    }
-}
 
 .img_representada{
     max-height: 100%;

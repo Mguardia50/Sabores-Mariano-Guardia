@@ -52,13 +52,6 @@
   width: 80%;
   height: 70%; }
 
-.btn_muestra {
-  background-color: #860920;
-  color: white;
-  padding: 5px; }
-  .btn_muestra:hover {
-    transform: scale(1.1, 1.1); }
-
 .img_representada {
   max-height: 100%;
   max-width: 100%; }

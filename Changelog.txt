@@ -1,5 +1,8 @@
 Sabores Mariano Guardia Changelog
 
+Sabores Mariano Guardia V 1.0)
+-Se realizó una API con todos los Sabores e Ingredientes
+
 Sabores Mariano Guardia V 0.81)
 -Se terminó de mejorar los responsives en altas resoluciones
 
