@@ -53,29 +53,29 @@
     <section class="section_contacto">
 
         
-        <form class="form_contacto" action="../enviar.php" method="post">
+        <form class="form_contacto" id="formContacto" > <!-- action="../enviar.php" method="post" -->
             
             <fieldset class="field_contacto">
                 <h2>DEJANOS TU MENSAJE</h2>
                 <div class="div_consulta">
-                    <label for="nombre">NOMBRE O RAZÓN SOCIAL</label>
+                    <label for="nombre">NOMBRE O RAZÓN SOCIAL*</label>
                     <input type="text" placeholder="Ingrese su nombre o razón social" id="nombre" name="nombre" class="form_box">
                 </div>
                 <div class="div_consulta">
-                    <label for="email">EMAIL</label>
+                    <label for="email">EMAIL*</label>
                     <input type="text" placeholder="Ingrese su mail" id="email" name="email" class="form_box">
                 </div>
                 <div class="div_consulta">
-                    <label for="tel">TELÉFONO</label>
+                    <label for="tel">TELÉFONO*</label>
                     <input type="number" placeholder="Ingrese el teléfono de contacto" id="tel" name="telefono" class="form_box">
                 </div>
                 <div class="div_consulta">
                     <label for="coment">INGRESE SU CONSULTA</label>
                         <textarea id="coment" name="consulta" cols="30" rows="8" class="form_box"></textarea>
-                        <input type="submit" value="ENVIAR CONSULTA" class="btn_muestra" style="margin-top: 20px;">
+                        <input type="submit" id="EnviarConsulta" value="ENVIAR CONSULTA" class="btn_muestra" style="margin-top: 20px;">
                 </div>
                 <div class="div_consulta" style="display: none;">
-                        <textarea id="muestrasSolicitadasOculto" name="consulta" cols="30" rows="8" class="form_box"></textarea>
+                        <textarea id="muestrasSolicitadasOculto" name="muestras" cols="30" rows="8" class="form_box"></textarea>
                 </div>
                 
                 
@@ -112,7 +112,9 @@
         <p class="footerParrafo">Copyright ©  Mariano Guardia Soft. Contacto: +54 9 261 5444-338 mail: mguardia50@hotmail.com Mendoza, Argentina</p>
     </footer> 
 
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="../JS/contacto.js"></script>
+<script src="../JS/enviarMail.js"></script>
     
 </body>
 </html>
